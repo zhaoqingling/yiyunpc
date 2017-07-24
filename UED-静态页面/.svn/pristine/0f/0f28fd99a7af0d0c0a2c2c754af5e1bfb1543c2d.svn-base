@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>没有绑定信息</title>
+    <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/login-regsiter.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="login-body">
+		<div class="login-big">
+			<div class="login-headr"><p><img src="../images/login-logo.png" /></p><p class="word">忘记密码</p></div>
+			<div class="password-bj">
+ 					<div class="recharge-success">
+ 						<ul>
+ 							<li><img src="../images/rech-fail.png" /></li>
+ 							<li class="list mt-50">
+ 								很遗憾，您没有绑定过任何信息，无法找回密码<br>可以拨打400-119-8080电话，咨询人工客服
+							</li>
+ 						</ul>
+ 					</div>
+			</div>
+
+</body>
+</html>

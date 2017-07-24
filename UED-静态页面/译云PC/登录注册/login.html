@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/login-regsiter.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body class="login-body">
+		<div class="login-big">
+			<div class="login-headr"><p><img src="../images/login-logo.png" /></p><p class="word">账号登录</p></div>
+			<div class="login-wrapper">
+				<div class="login-left">
+				<ul class="slider-pic" id="slider">
+					<li style="background-image:url(../images/login_banner.png);"><a href="javascript:;"></a></li>
+					<li style="background-image:url(../images/login-bj.png);"><a href="javascript:;"></a></li>
+					<li style="background-image:url(../images/login_banner.png);"><a href="javascript:;"></a></li>
+					<li style="background-image:url(../images/login-bj.png);"><a href="javascript:;"></a></li>
+				</ul>
+				<ol class="slider-num" id="sliderNum">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+				<div class="login-right radius">
+					<div class="login-title">登录</div>
+					<div class="login-form-title">
+						<ul>
+							<label>密码输入错误，请重新输入</label>
+							<p class="right" id="change-login"><i class="icon iconfont">&#xe613;</i><span>手机快速登录</span></p>
+						</ul>
+					</div>
+          <div class="login-form-wrap" login-form-wrap>
+  					<div class="login-form" login-form>
+  						<ul>
+  							<li class="int-border radius">
+  								<p class="int-icon"><i class="icon iconfont">&#xe60c;</i></p>
+  								<p><input type="text" class="int-text logon-int" placeholder="请输入用户名"></p>
+  							</li>
+  							<li class="int-border radius">
+  								<p class="int-icon"><i class="icon iconfont">&#xe609;</i></p>
+  								<p><input type="password" class="int-text logon-int" placeholder="＊＊＊＊＊＊＊＊"></p>
+  							</li>
+  							<li>
+  								<p><input type="text" class="int-text logon-yz-int radius" placeholder="请输入验证码"></p>
+  								<p><img src="../images/yzm.jpg"></p>
+  							</li>
+  							<li>
+  								<p><a href="#">注册</a></p>
+  								<p class="right"><a href="#">忘记密码</a></p>
+  							</li>
+  							<li>
+  								<input type="button" class="btn btn-blue login-btn radius20" value="登 录">
+  							</li>
+  							<li>
+  								<p>合作账号登录</p>
+  								<p class="line"></p>
+  							</li>
+  							<li>
+  								<p><a href="javascript:;" class="share share1" other-account></a></p>
+  								<p><a href="#" class="share share2"></a></p>
+  								<p><a href="#" class="share share3"></a></p>
+  								<p><a href="#" class="share share4"></a></p>
+  								<p><a href="#" class="share share5"></a></p>
+  								<p><a href="#" class="share share6"></a></p>
+  								<p><a href="#" class="share share7 none-ma"></a></p>
+  							</li>
+  						</ul>
+              <ul>
+  							<li class="int-border radius posr">
+  								<p class="int-icon"><i class="icon iconfont">&#xe657;</i></p>
+                  <select name="" id="" class="select num-select">
+								    <option value="">中国　　　　　　　　　　　　　　+86</option>
+								    <option value="">中国　　　　　　　　　　　　　　+86</option>
+								  </select>
+  							</li>
+  							<li class="int-border radius error">
+  								<p class="int-icon"><i class="icon iconfont">&#xe63c;</i></p>
+  								<p><input type="text" class="int-text logon-int" placeholder="请输入手机号"></p>
+  							</li>
+  							<li>
+  								<p><input type="text" class="int-text logon-yz-int radius" placeholder="请输入验证码"></p>
+  								<p><img src="../images/yzm.jpg"></p>
+  							</li>
+  							<li>
+  								<p><input type="text" class="int-text logon-yz-int radius" placeholder="请输入验证码"></p>
+  								<p><button class="btn-green btn btn-getcode">获取动态码</button></p>
+  							</li>
+  							<li>
+  								<p><a href="#">注册</a></p>
+  								<p class="right"><a href="#">忘记密码</a></p>
+  							</li>
+  							<li>
+  								<input type="button" class="btn btn-blue login-btn radius20" value="登 录">
+                  <p class="notice">验证成功则登录，未注册将自动创建译云帐号 </p>
+  							</li>
+  							<li>
+  								<p>合作账号登录</p>
+  								<p class="line"></p>
+  							</li>
+  							<li>
+  								<p><a href="javascript:;" class="share share1" other-account></a></p>
+  								<p><a href="#" class="share share2"></a></p>
+  								<p><a href="#" class="share share3"></a></p>
+  								<p><a href="#" class="share share4"></a></p>
+  								<p><a href="#" class="share share5"></a></p>
+  								<p><a href="#" class="share share6"></a></p>
+  								<p><a href="#" class="share share7 none-ma"></a></p>
+  							</li>
+  						</ul>
+  					</div>
+          </div>
+				</div>
+			</div>
+		</div>
+
+    <!-- 金山账户登录弹窗 -->
+    <div class="mask undis" mask></div>
+    <div class="account-dialog undis" account-dialog>
+        <div class="dialog-content">
+            <p class="tit">金山账号登录</p>
+            <div class="login-form-wrap">
+              <p class="error">密码输入错误，请重新输入</p>
+              <div class="login-form">
+                <ul>
+                  <li class="int-border radius">
+                    <p class="int-icon"><i class="icon iconfont">&#xe60c;</i></p>
+                    <p><input type="text" class="int-text logon-int" placeholder="请输入用户名" /></p>
+                  </li>
+                  <li class="int-border radius">
+                    <p class="int-icon"><i class="icon iconfont">&#xe609;</i></p>
+                    <p><input type="password" class="int-text logon-int" placeholder="请输入密码" /></p>
+                  </li>
+                  <li>
+                    <p><input type="text" class="int-text logon-yz-int radius" placeholder="请输入验证码" /></p>
+                    <p><img src="../images/yzm.jpg"></p>
+                  </li>
+                  
+                  <li>
+                    <input type="button" class="btn btn-yellow login-btn radius20" value="登 录">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <span class="account-close" account-close></span>
+        </div>
+    </div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/jquery.cycleSlider.js"></script>
+<script type="text/javascript" src="../scripts/modular/login.js"></script>
+</body>
+</html>

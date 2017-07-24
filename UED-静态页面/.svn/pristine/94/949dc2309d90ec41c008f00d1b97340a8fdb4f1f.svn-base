@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>加载</title>
+    <link href="css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/modular.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/frame.css" rel="stylesheet" type="text/css"/>
+</head>
+<body class="loading-bj">
+11111111
+	<section class="loading-wrapper">
+		<p class="img1"><img src="images/loading-logo.png" /></p>
+		<p class="img2"><div id="foo" style="margin-top:1rem;"></div></p>
+		<p class="img3">加载中</p>
+	</section>
+	
+</body>
+</html>
+<script type="text/javascript" src="scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="scripts/modular/global.js"></script>
+<script type="text/javascript" src="scripts/modular/frame.js"></script>
+<script type="text/javascript" src="scripts/modular/spin.min.js"></script>
+<script type="text/javascript" src="scripts/modular/loading.js"></script>

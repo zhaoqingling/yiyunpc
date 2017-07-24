@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>翻译下单页</title>
+    <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/headr-footer.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/icheck.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>	
+	<!--面包屑导航-->
+		<div class="placeorder-breadcrumb-big">
+			<div class="placeorder-breadcrumb">
+				<ul>
+					<li class="left"><i class="icon-volume-off"></i><A href="#">网站公告栏，通知网站各种事件</A></li>
+					<li class="right">
+						<p><a href="#">登陆</a><a href="#" class="blue">免费注册</a></p> 
+						<p><a href="#">我的订单</a></p>
+						<p><a href="#">我是客户</a></p>
+						<p><a href="#">我是服务商</a></p>
+						<p><a href="#"  class="none-border"><i class="icon iconfont">&#xe60b;</i>手机版</a></p>
+						<p class="in-switch" id="in-switch">
+							<a href="#">简体中文<i class="icon-caret-down"></i></a>
+						</p>	 
+						<div class="in-switch-hover" style="display: none;">
+					  			<ul>
+					  				<li><a href="#">简体中文</a></li>
+					  				<li class="border-none"><a href="#">English</a></li>
+					  			</ul>
+			  		  	</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--主导航-->
+		<div class="placeorder-subnav-big">
+			<div class="placeorder-subnav">
+				<ul>
+					<li class="logo"><a href="#"><img src="../images/logo1.png" /></a></li>
+					<li class="right">                                                 
+						<p><a href="#">首页</a></p>
+						<p><a href="#">笔译</a></p>
+						<p><a href="#">口译</a></p>
+						<p><a href="#">服务</a></p>
+						<p><a href="#">APP</a></p>
+						<p><a href="#">字幕通</a></p>
+						<p><a href="#">译库网页翻译</a></p>
+						<p><a href="#">社区</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="placeorder-container translate-order">
+		<div class="placeorder-wrapper">
+			<!--步骤-->
+			<div class="place-bj">
+				<div class="place-step">
+					<!--进行的状态-->
+			 		<div class="place-step-none adopt-blue-bj">
+			 			<ul>
+			 				<li class="circle"><i class="icon iconfont">&#xe60f;</i></li>
+			 				<li class="word">翻译内容</li>
+			 			</ul>
+			 			<p class="line"></p>
+			 		</div>
+			 		<!--未进行的状态-->
+			 		<div class="place-step-none adopt-ash-bj">
+			 			<ul>
+			 				<li class="circle"><i class="icon iconfont">&#xe60d;</i></li>
+			 				<li class="word">填写联系方式</li>
+			 			</ul>
+			 			<p class="line"></p>
+			 		</div>
+			 		<!--未进行的状态-->
+			 		<div class="place-step-none adopt-ash-bj">
+			 			<ul>
+			 				<li class="circle"><i class="icon iconfont">&#xe608;</i></li>
+			 				<li class="word">支付</li>
+			 			</ul>
+			 			<p class="line"></p>
+			 		</div>
+			 		
+				</div>
+			</div>
+			<!--白色背景-->
+			<div class="white-bj">
+				<div class="right-list-title pb-20 pl-20 none-border">
+  					<p>翻译语言</p>
+  				</div>
+  				<div class="placeorder-translate">
+  					<select tabindex="5" class="dropdown" id="showa" data-settings='{"cutOff": 12}'>
+								<option value="" class="label">俄语</option>
+								<option value="zh">自动检测</option>
+								<option value="zh">中文简体</option>
+		                        <option value="en">英语</option>
+		                        <option value="fr">法语</option>
+		                        <option value="de">德语</option>
+		                        <option value="zh">自动检测</option>
+								<option value="zh">中文简体</option>
+		                        <option value="en">英语</option>
+		                        <option value="fr">法语</option>
+		                        <option value="de">德语</option>
+		                        <option value="zh">自动检测</option>
+								<option value="zh">中文简体</option>
+		                        <option value="en">英语</option>
+		                        <option value="fr">法语</option>
+		                        <option value="de">德语</option>
+					</select>
+  					<label>请输入翻译内容</label>
+  				</div>
+			</div>
+			<!--白色背景-->
+			<div class="white-bj">
+				<div class="right-list-title pb-20 pl-20 none-border">
+  					<p>翻译内容</p>
+  				</div>
+  				<div class="translate-int translate-int1 radius" id="fy1">
+  					<p><textarea class="int-text textarea-xlarge-100 radius" id="textarea-empty"></textarea></p>
+  					<p class="right">
+  						<input type="button" class="btn border-blue radius20 btn-80" value="清除文字" id="empty">
+  						<input type="button" class="btn border-blue radius20 btn-80" value="上传文档1" id="fy-btn">
+  					</p>
+  					<div class="already">已输入<span>245</span>字，最多可输入2000字</div>
+  					<label class="clabel">请输入翻译内容</label>		
+  				</div>
+  				<div class="translate-int radius bj-ash" id="fy2">
+  					<div class="limit-height">
+	  					<div class="attachment">
+	  						<ul>
+	  							<li class="word">我要翻译的文档xxxxx.doc</li>
+	  							<li>
+	  								<p class="ash-bj"><span style="width:70%;"></span></p>
+	  								<p>64%</p>
+	  							</li>
+	  							<li class="right"><i class="icon iconfont">&#xe618;</i></li>
+	  						</ul>
+	  						<ul>
+	  							<li class="word">我要翻译的文档xxxxx.doc</li>
+	  							<li>
+	  								<p class="ash-bj"><span style="width:70%;"></span></p>
+	  								<p>64%</p>
+	  							</li>
+	  							<li class="right"><i class="icon iconfont">&#xe618;</i></li>
+	  						</ul>
+	  						<ul>
+	  							<li class="word">我要翻译的文档xxxxx.doc</li>
+	  							<li>
+	  								<p class="ash-bj"><span style="width:70%;"></span></p>
+	  								<p>64%</p>
+	  							</li>
+	  							<li class="right"><i class="icon iconfont">&#xe618;</i></li>
+	  						</ul>
+	  						<ul>
+	  							<li class="word">我要翻译的文档xxxxx.doc</li>
+	  							<li>
+	  								<p class="ash-bj"><span style="width:70%;"></span></p>
+	  								<p>64%</p>
+	  							</li>
+	  							<li class="right"><i class="icon iconfont">&#xe618;</i></li>
+	  						</ul>
+	  						
+	  						<ul>
+	  							<li class="word">我要翻译的文档xxxxx.doc</li>
+	  							<li>
+	  								<p class="ash-bj"><span style="width:70%;"></span></p>
+	  								<p>64%</p>
+	  							</li>
+	  							<li class="right"><i class="icon iconfont">&#xe618;</i></li>
+	  						</ul>
+	  					</div>
+	  					<div class="attachment-btn">
+	  						<ul>
+	  							<li class="pp"><input type="button" class="btn border-green btn-large radius20" value="文档上传"><input type="file" class="att-file"></p></li>
+	  							<li class="word">将文件拖拽至此区域可上传</lil>
+	  						</ul>
+	  					</div>
+	  					</div>
+	  					<div class="shur-btn">
+	  						<p class="right mr-0"><input type="button" class="btn border-blue radius20 btn-80 " value="输入文字"  id="fy-btn1"></p>
+	  					</div>
+  				</div>
+			</div>
+			<!--白色背景-->
+			<div class="white-bj">
+				<div class="selection-level mt-20">
+					<ul class="none-ml current">
+						<li class="blue">
+							<p class="title">普通级</p>
+							<p><i class="icon-star-empty title"></i></p>
+						</li>
+						<li>
+							<p class="tip-msg">适用于个人阅读、理解</p>
+						</li>
+						<li>
+							<p><span class="number">150</span>元/千字</p>
+							<p class="ml-30"><span class="number">1</span>次免费修改</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<label></label>
+					</ul>
+					<ul>
+						<li class="blue">
+							<p class="title">普通级</p>
+							<p><i class="icon-star-empty title"></i></p>
+						</li>
+						<li>
+							<p class="tip-msg">适用于个人阅读、理解</p>
+						</li>
+						<li>
+							<p><span class="number">150</span>元/千字</p>
+							<p class="ml-30"><span class="number">1</span>次免费修改</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<label></label>
+					</ul>
+					<ul>
+						<li class="blue">
+							<p class="title">普通级</p>
+							<p><i class="icon-star-empty title"></i></p>
+						</li>
+						<li>
+							<p class="tip-msg">适用于个人阅读、理解</p>
+						</li>
+						<li>
+							<p><span class="number">150</span>元/千字</p>
+							<p class="ml-30"><span class="number">1</span>次免费修改</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<li class="green-li">
+							<p class="icon"><i class="icon iconfont">&#xe68b;</i></p>
+							<p>专业译员翻译</p>
+						</li>
+						<label></label>
+					</ul>
+				</div>
+				<!--select-->
+				<div class="selection-select mt-50">
+					<ul>
+						<li class="none-ml">
+							<p class="word">用途</p>
+							<p><select class="select select-medium radius"><option>合同标书</option></select></p>
+						</li>
+						<li>
+							<p class="word">领域</p>
+							<p><select class="select select-medium radius"><option>医药化工</option></select></p>
+						</li>
+						<li>
+							<p class="word">增值服务</p>
+							<p><select class="select select-medium radius"><option>排版</option></select></p>
+						</li>
+						<li class="width-large">
+							<p class="word">格式转换</p>
+							<p><select class="select select-medium radius"><option>无格式转换</option></select></p>
+							<p class="ml-20"><input type="text" class="int-text int-in-bi-text radius"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="right-list-title pb-20 pl-20 mt-40 none-border">
+  					<p>预计翻译速度</p>
+  				</div>
+  				<div class="urgent">
+  					<ul>
+  						<li><span class="number">1500</span>字/小时</li>
+  						<li class="mt-10">
+  							<p><input type="checkbox" checked=""  class="radio">加急</p>
+  							<p class="word ml-20">加急订单，更快获得译文</p>
+  						</li>
+  					</ul>
+  				</div>
+			</div>	
+			<div class="recharge-btn order-btn placeorder-btn ml-0">
+ 				<input type="button" id="recharge-popo" class="btn btn-green btn-xxxlarge radius10" value="提 交 翻 译">
+ 				<p><input type="checkbox" class="radio read-agree" checked="">阅读并同意<a href="#">《译云翻译协议》</a></p>
+ 			</div>
+			
+		</div>
+		</div>
+		<div class="second-footer">译云专业语言服务平台 版权所有      Copyright ©2015 www.yeecloud.com All rights reserved. 京ICP备13002826号-7</div>
+		
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/drop-down.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>		
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script  type="text/javascript" src="../scripts/modular/icheck.js"></script>	
+<script type="text/javascript">
+$(document).ready(function(){
+              $('.urgent input').iCheck({
+                checkboxClass: 'icheckbox_flat-blue',
+                radioClass: 'iradio_flat-blue'
+              });
+ });
+  $(document).ready(function(){
+              $('.recharge-btn input').iCheck({
+                checkboxClass: 'icheckbox_flat-blue',
+                radioClass: 'iradio_flat-blue'
+              });
+ });
+</script>
+</body>
+</html>

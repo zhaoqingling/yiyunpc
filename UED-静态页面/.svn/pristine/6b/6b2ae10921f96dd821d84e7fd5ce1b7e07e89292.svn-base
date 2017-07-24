@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>意见反馈</title>
+    <link href="css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/modular.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/frame.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="wrapper-big"><!--包含除底部外的所有层-->
+<nav class="wap-second-nav">
+		<ul>
+			<a href="javascript:"><i class="icon iconfont left">&#xe626;</i></a>
+			<li>意见反馈</li>
+			<a href="javascript:" id="nav-list"><i class="icon iconfont right">&#xe629;</i></a>
+		</ul>
+		<div class="pop-nav">
+			<ul>
+				<li>
+					<a href="#">译云首页</a>|
+					<a href="#">个人中心</a>|
+					<a href="#">我的订单</a>|
+					<a href="#">安全退出</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section class="feedback">
+		<ul>
+			<li class="one">
+				<p>问题类型：</p>
+				<p class="right"><select class="select feedback-select"><option>网站建议</option></select></p>
+			</li>
+			<li><textarea class="textarea feedback-textarea"></textarea></li>
+			<li class="tow">
+				<p>联系方式：</p>
+				<p><input class="input phone-input"></p>
+				<label>请输入正确的手机号</label>
+			</li>
+		</ul>
+	</section>
+</div>
+	<section class="add-btn big-add-btn">
+			<p>咨询热线：400-119-8080</p>
+			<a href="#" class="btn submit-btn btn-blue" >提交</a>
+	</section>
+	
+
+
+</body>
+</html>
+<script type="text/javascript" src="scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="scripts/modular/global.js"></script>
+<script type="text/javascript" src="scripts/modular/frame.js"></script>

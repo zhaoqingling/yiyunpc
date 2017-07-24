@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>查看评价</title>
+    <link href="css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/modular.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/frame.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="wrapper-big"><!--包含除底部外的所有层-->
+<nav class="wap-second-nav">
+		<ul>
+			<a href="javascript:"><i class="icon iconfont left">&#xe626;</i></a>
+			<li>评价订单</li>
+			<a href="javascript:" id="nav-list"><i class="icon iconfont right">&#xe629;</i></a>
+		</ul>
+		<div class="pop-nav">
+			<ul>
+				<li>
+					<a href="#">译云首页</a>|
+					<a href="#">个人中心</a>|
+					<a href="#">我的订单</a>|
+					<a href="#">安全退出</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section class="evaluate">
+		<div class="evaluate-title none-border">
+			<ul>
+				<li>
+					<p class="word">服务质量：</p>
+					<p>
+						<span><img src="images/x-l.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+					</p>
+				</li>
+				<li>
+					<p class="word">服务速度：</p>
+					<p>
+						<span><img src="images/x-l.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+					</p>
+				</li>
+				<li>
+					<p class="word">服务态度：</p>
+					<p>
+						<span><img src="images/x-l.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+						<span><img src="images/x.jpg"></span>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<div class="evaluate-list">
+			<div class="pingj">评价内容：</div>
+			<div class="pingj-list">
+				翻译的很好很周到很不错，翻译的很好很周到很不错，翻译的很好很周到很不错。
+			</div>
+			<div class="pingj-center">感谢您的评价！</div>
+		</div>
+	</section>
+</div>
+
+	
+
+
+</body>
+</html>
+<script type="text/javascript" src="scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="scripts/modular/global.js"></script>
+<script type="text/javascript" src="scripts/modular/frame.js"></script>

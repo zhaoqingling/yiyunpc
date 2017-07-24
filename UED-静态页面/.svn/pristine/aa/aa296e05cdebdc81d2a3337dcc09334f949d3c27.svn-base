@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>支付页成功</title>
+    <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/headr-footer.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>	
+	<!--面包屑导航-->
+		<div class="placeorder-breadcrumb-big">
+			<div class="placeorder-breadcrumb">
+				<ul>
+					<li class="left"><i class="icon-volume-off"></i><A href="#">网站公告栏，通知网站各种事件</A></li>
+					<li class="right">
+						<p><a href="#">登陆</a><a href="#" class="blue">免费注册</a></p> 
+						<p><a href="#">我的订单</a></p>
+						<p><a href="#">我是客户</a></p>
+						<p><a href="#">我是服务商</a></p>
+						<p class="none-border"><i class="icon iconfont">&#xe60b;</i><a href="#">手机版</a></p>
+						<p class="none-border none-top">
+							<select class="select select-topmini none-select ash-select">
+								<option>简体中文</option>
+	  							<option>ENGLISH</option>
+							</select>
+							<i class="icon-caret-down"></i>
+						</p>	                                    
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--主导航-->
+		<div class="placeorder-subnav-big">
+			<div class="placeorder-subnav">
+				<ul>
+					<li class="logo"><a href="#"><img src="../images/logo1.png" /></a></li>
+					<li class="right">                                                 
+						<p><a href="#">首页</a></p>
+						<p><a href="#">笔译</a></p>
+						<p><a href="#">口译</a></p>
+						<p><a href="#">服务</a></p>
+						<p><a href="#">APP</a></p>
+						<p><a href="#">字幕通</a></p>
+						<p><a href="#">译库网页翻译</a></p>
+						<p><a href="#">社区</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="placeorder-container">
+		<div class="placeorder-wrapper">
+			<!--步骤-->
+			<div class="place-bj">
+				<div class="place-step">
+					<!--进行的状态-->
+			 		<div class="place-step-none adopt-wathet-bj">
+			 			<ul>
+			 				<li class="circle"><i class="icon iconfont">&#xe60f;</i></li>
+			 				<li class="word">翻译内容</li>
+			 			</ul>
+			 			<p class="line"></p>
+			 		</div>
+			 		<!--未进行的状态-->
+			 		<div class="place-step-none adopt-wathet-bj">
+			 			<ul>
+			 				<li class="circle"><i class="icon iconfont">&#xe60d;</i></li>
+			 				<li class="word">填写联系方式</li>
+			 			</ul>
+			 			<p class="line"></p>
+			 		</div>
+			 		<!--未进行的状态-->
+			 		<div class="place-step-none adopt-blue-bj">
+			 			<ul>
+			 				<li class="circle"><i class="icon iconfont">&#xe608;</i></li>
+			 				<li class="word">支付</li>
+			 			</ul>
+			 			<p class="line"></p>
+			 		</div>
+			 		
+				</div>
+			</div>
+			<!--白色背景-->
+			<div class="white-bj   pdd-150">
+				<div class="recharge-success">
+ 						<ul>
+ 							<li><img src="../images/rech-fail.png" /></li>
+ 							<li class="word">充值失败</li>
+ 							<li class="list mt-50">
+ 								<p>请您牢记充值单号： <a href="#">5000020965</a>,您可以在“<a href="我的订单.html">我的订单</a>”中查看您的充值信息</p>
+ 								<p>若有任何疑问，欢迎致电咨询：400-119-8080</p>
+							</li>
+ 						</ul>
+ 					</div>
+	
+			</div>
+
+			
+		</div>
+		</div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+</body>
+</html>

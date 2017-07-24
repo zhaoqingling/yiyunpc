@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>译员-翻译收藏</title>
+	  <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	  <link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	  <link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--弹出-->
+<div class="eject-big">
+    <div class="prompt-samll" delete-dlog>
+    <div class="prompt-samll-title">删除</div>
+    <!--确认删除-->
+    <div class="prompt-samll-confirm">
+      <ul class="pass-list">
+      <li>
+        确定要删除该条收藏？
+      </li>
+      <li class="eject-btn">
+        <input type="button" class="btn btn-green btn-120 radius20" value="确 定" completed>
+        <input type="button" class="btn border-green btn-120 radius20" value="取 消" cancel>
+      </li>
+      </ul>
+    </div>
+    </div>
+  <div class="mask" eject-mask></div>
+</div>
+<!--/弹出结束-->
+<!--弹出-->
+<div class="eject-big translate-collect-dialog">
+    <div class="prompt-big" edit-msg>
+    <div class="prompt-big-title">编辑收藏</div>
+      <div>
+        <ul class="pass-list">
+          <li>
+           原文：
+          </li>
+          <li>
+           <p>Lorem ipsum dolor sit amet,consectrtur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. proin sodales pulvinar tempor. gnis dis parturient montes, nascetur ridiculus mus.</p>
+          </li>
+           <li>
+           译文：
+          </li>
+          <li>
+            <textarea class="int-text textarea radius"></textarea>
+          </li>
+         </ul>
+        <div class="prompt-samll-confirm prompt-mt">
+          <ul>
+            <li class="eject-btn">
+              <input type="button" edit-determine class="btn btn-green btn-120 radius20" value="确定">
+              <input type="button" edit-cancel class="btn border-green btn-120 radius20" value="取消">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mask" eject-mask></div>
+  </div>
+<!--/弹出结束-->
+	<!--头部-->
+	<div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li class="current"><a href="#">我是客户</a></li>
+  				<li><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="#">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">爱大脸大脸爱大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><i class="icon-user"></i><a href="#">个人信息</a></li>
+		  				<li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+		  				<li><i class="icon-off"></i><a href="#">退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  <!--内侧内容区域-->
+  <div class="cloud-wrapper">
+  	<!--左侧菜单-->
+  	<div class="left-subnav">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip1"></p>
+  				</li>
+  			</ul>
+  		</div>
+
+  		<div class="left-list">
+  			<ul>
+  				<li>
+  					<a href="我的订单-下过订单.html">
+  					<span><i class="icon iconfont">&#xe645;</i></span>
+  					<span>我的首页</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的订单.html">
+  					<span><i class="icon iconfont">&#xe64a;</i></span>
+  					<span>我的订单</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的账户.html">
+  					<span><i class="icon iconfont">&#xe648;</i></span>
+  					<span>我的账户</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="优惠卷.html">
+  					<span><i class="icon iconfont">&#xe644;</i></span>
+  					<span>优惠券</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的级别.html">
+  					<span><i class="icon iconfont">&#xe647;</i></span>
+  					<span>我的级别</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的积分.html">
+  					<span><i class="icon iconfont">&#xe605;</i></span>
+  					<span>我的积分</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="发票管理.html">
+  					<span><i class="icon iconfont">&#xe643;</i></span>
+  					<span>发票管理</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="企业中心.html">
+  					<span><i class="icon iconfont">&#xe6f8;</i></span>
+  					<span>企业中心</span>
+  					</a>
+  				</li>
+          <li>
+            <a href="个人信息.html">
+            <span><i class="icon iconfont">&#xe642;</i></span>
+            <span>个人信息</span>
+            </a>
+          </li>
+          <li>
+            <a href="联系方式.html">
+            <span><i class="icon iconfont">&#xe63c;</i></span>
+            <span>联系方式</span>
+            </a>
+          </li>
+          <li class="current">
+            <a href="收藏翻译管理.html">
+            <span><i class="icon iconfont">&#xe6aa;</i></span>
+            <span>翻译收藏</span>
+            </a>
+          </li>
+  				<li>
+  					<a href="安全设置.html">
+  					<span><i class="icon iconfont">&#xe63f;</i></span>
+  					<span>安全设置</span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+  <div class="right-wrapper translate-collect">
+  	<div class="right-list right-list-height mt-0">
+      <div class="translate-box">
+    			<div class="collect-tit">
+              <h2 class="tit">翻译收藏</h2>
+              <button type="button">批量删除</button>
+              <span all-cancel>取消</span>
+              <span all-select>全选</span>
+          </div>
+          <div class="collect-con">
+              <p class="translate-tit">
+                <span class="select-check">1.</span>
+                <span class="time">2015-04-07 09:53:51</span>
+                <span class="delete" delete-btn></span>
+                <span class="edit" edit></span>
+              </p>
+              <div class="confirmation-list">
+                <ul>
+                  <li class="title">原文:</li>
+                  <li class="word">翻译是在准确、通顺的基础上，把一种语言信息转变成另一种语言信息的行为。翻译是将一种相对陌生的表达方式，转换成相对熟悉的表达方式的过程。其内容有语言、文字、图形、符号的翻译。其中，“翻”是指对交谈的语言转换，“译”是指对单向陈述的语言转换。“翻”是指对交谈中的两种语言进行即时的、一句对一句的转换，即先把一句甲语转<A href="#">[更多]</A></li>
+                </ul>
+                <ul class="mt-15 translate-txt">
+                  <li class="title">译文:</li>
+                  <li class="word">The translation is accurate and fluent on the basis of one language into another language behavior. Translation is a relatively unfamiliar way of expression, into a relatively familiar with the way of expression of the process. Its contents are language, text, graphics, symbols, translation. Among them, "turning" refers to <a href="#">[更多]</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="collect-con">
+              <p class="translate-tit">
+                <span class="select-check">2.</span>
+                <span class="time">2015-04-07 09:53:51</span>
+                <span class="delete" delete-btn></span>
+                <span class="edit" edit></span>
+              </p>
+              <div class="confirmation-list">
+                <ul>
+                  <li class="title">原文:</li>
+                  <li class="word">翻译是在准确、通顺的基础上，把一种语言信息转变成另一种语言信息的行为。翻译是将一种相对陌生的表达方式，转换成相对熟悉的表达方式的过程。其内容有语言、文字、图形、符号的翻译。其中，“翻”是指对交谈的语言转换，“译”是指对单向陈述的语言转换。“翻”是指对交谈中的两种语言进行即时的、一句对一句的转换，即先把一句甲语转<A href="#">[更多]</A></li>
+                </ul>
+                <ul class="mt-15 translate-txt">
+                  <li class="title">译文:</li>
+                  <li class="word">The translation is accurate and fluent on the basis of one language into another language behavior. Translation is a relatively unfamiliar way of expression, into a relatively familiar with the way of expression of the process. Its contents are language, text, graphics, symbols, translation. Among them, "turning" refers to <a href="#">[更多]</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="collect-con">
+              <p class="translate-tit">
+                <span class="select-check">3.</span>
+                <span class="time">2015-04-07 09:53:51</span>
+                <span class="delete" delete-btn></span>
+                <span class="edit" edit></span>
+              </p>
+              <div class="confirmation-list">
+                <ul>
+                  <li class="title">原文:</li>
+                  <li class="word">翻译是在准确、通顺的基础上，把一种语言信息转变成另一种语言信息的行为。翻译是将一种相对陌生的表达方式，转换成相对熟悉的表达方式的过程。其内容有语言、文字、图形、符号的翻译。其中，“翻”是指对交谈的语言转换，“译”是指对单向陈述的语言转换。“翻”是指对交谈中的两种语言进行即时的、一句对一句的转换，即先把一句甲语转<A href="#">[收起]</A></li>
+                </ul>
+                <ul class="mt-15 translate-txt">
+                  <li class="title">译文:</li>
+                  <li class="word">The translation is accurate and fluent on the basis of one language into another language behavior. Translation is a relatively unfamiliar way of expression, into a relatively familiar with the way of expression of the process. Its contents are language, text, graphics, symbols, translation. Among them, "turning" refers to <a href="#">[收起]</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="collect-con">
+              <p class="translate-tit">
+                <span class="select-check">4.</span>
+                <span class="time">2015-04-07 09:53:51</span>
+                <span class="delete" delete-btn></span>
+                <span class="edit" edit></span>
+              </p>
+              <div class="confirmation-list">
+                <ul>
+                  <li class="title">原文:</li>
+                  <li class="word">翻译是在准确、通顺的基础上，把一种语言信息转变成另一种语言信息的行为。翻译是将一种相对陌生的表达方式，转换成相对熟悉的表达方式的过程。其内容有语言、文字、图形、符号的翻译。其中，“翻”是指对交谈的语言转换，“译”是指对单向陈述的语言转换。“翻”是指对交谈中的两种语言进行即时的、一句对一句的转换，即先把一句甲语转<A href="#">[更多]</A></li>
+                </ul>
+                <ul class="mt-15 translate-txt">
+                  <li class="title">译文:</li>
+                  <li class="word">The translation is accurate and fluent on the basis of one language into another language behavior. Translation is a relatively unfamiliar way of expression, into a relatively familiar with the way of expression of the process. Its contents are language, text, graphics, symbols, translation. Among them, "turning" refers to <a href="#">[更多]</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="biu-paging paging-large jifen">
+          <ul>
+               <li class="prev-up"><a href="#">&lt;</a></li>
+               <li class="active"><a href="#">1</a></li>
+               <li><a href="#">2</a></li>
+               <li><a href="#">3</a></li>
+               <li><a href="#">4</a></li>
+               <li><a href="#">5</a></li>
+               <li><a href="#">6</a></li>
+               <li><a href="#">……</a></li>
+               <li><a href="#">100</a></li>
+               <li class="next-down"><a href="#">></a></li>
+               <p>
+              <span>到</span>
+              <span><input type="text" class="int-verysmall radius"></span>
+              <span>页</span>
+            </p>
+            <p class="taiz"><a href="#">跳转</a></p>
+         </ul>
+        </div>
+  	</div>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/eject.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+<script type="text/javascript">
+$(function(){
+
+  /*点击checkbox*/
+  $(document).on('click','.collect-con .select-check',function(){
+      if(!$(this).hasClass('active')){
+        $(this).addClass('active');
+        $(this).parents('.collect-con').addClass('active');
+      }else{
+        $(this).removeClass('active');
+         $(this).parents('.collect-con').removeClass('active');
+      }
+       return false;
+  });
+
+  /*点击全选*/
+  $(document).on('click','[all-select]',function(){
+    $('.translate-box .collect-con').each(function(){
+
+        $(this).addClass('active');
+        $(this).find('.select-check').addClass('active');
+    });
+     return false;
+  });
+  /*点击取消*/
+  $(document).on('click','[all-cancel]',function(){
+    $('.translate-box .collect-con').each(function(){
+
+        $(this).removeClass('active');
+        $(this).find('.select-check').removeClass('active');
+    });
+     return false;
+  });
+});
+</script>
+</body>
+</html>

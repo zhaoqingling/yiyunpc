@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>人员管理</title>
+	 <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--弹出--> 
+  <div class="eject-big">
+      <div class="prompt-samll" delete-dlog>
+      <div class="prompt-samll-title">删除</div>
+      <!--确认删除-->
+      <div class="prompt-samll-confirm">
+        <ul class="pass-list">
+        <li>
+          确定要删除该条收藏？
+        </li>
+        <li class="eject-btn">
+          <input type="button" class="btn btn-green btn-120 radius20" value="确 定" completed>
+          <input type="button" class="btn border-green btn-120 radius20" value="取 消" cancel>
+        </li>   
+        </ul>
+      </div>
+      </div>  
+    <div class="mask" eject-mask></div>
+  </div>
+<!--/弹出结束-->
+<!--弹出--> 
+  <div class="eject-big">
+      <div class="prompt-samll" edit-msg>
+      <div class="prompt-samll-title">移交管理员</div>
+      <!--确认删除-->
+      <div class="prompt-samll-confirm">
+        <ul class="pass-list">
+        <li>
+          您确定将管理员身份移交给对方？
+        </li>
+        <li class="eject-btn">
+          <input type="button" class="btn btn-green btn-120 radius20" value="确 定" edit-determine>
+          <input type="button" class="btn border-green btn-120 radius20" value="取 消" edit-cancel>
+        </li>   
+        </ul>
+      </div>
+      </div>  
+    <div class="mask" eject-mask></div>
+  </div>
+<!--/弹出结束-->
+	<!--头部-->
+	<div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li class="current"><a href="#">我是客户</a></li>
+  				<li><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="#">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">爱大脸大脸爱大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><i class="icon-user"></i><a href="#">个人信息</a></li>
+		  				<li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+		  				<li><i class="icon-off"></i><a href="#">退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  <!--内侧内容区域-->
+  <div class="cloud-wrapper">
+  	<!--左侧菜单-->
+  	<div class="left-subnav">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip1"></p>
+  				</li>
+  			</ul>
+  		</div>
+
+  		<div class="left-list">
+  			<ul>
+  				<li>
+  					<a href="我的订单-下过订单.html">
+  					<span><i class="icon iconfont">&#xe645;</i></span>
+  					<span>我的首页</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的订单.html">
+  					<span><i class="icon iconfont">&#xe64a;</i></span>
+  					<span>我的订单</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的账户.html">
+  					<span><i class="icon iconfont">&#xe648;</i></span>
+  					<span>我的账户</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="优惠卷.html">
+  					<span><i class="icon iconfont">&#xe644;</i></span>
+  					<span>优惠券</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的级别.html">
+  					<span><i class="icon iconfont">&#xe647;</i></span>
+  					<span>我的级别</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的积分.html">
+  					<span><i class="icon iconfont">&#xe605;</i></span>
+  					<span>我的积分</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="发票管理.html">
+  					<span><i class="icon iconfont">&#xe643;</i></span>
+  					<span>发票管理</span>
+  					</a>
+  				</li>
+  				<li class="current">
+  					<a href="企业中心.html">
+  					<span><i class="icon iconfont">&#xe6f8;</i></span>
+  					<span>企业中心</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="个人信息.html">
+  					<span><i class="icon iconfont">&#xe642;</i></span>
+  					<span>个人信息</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="安全设置.html">
+  					<span><i class="icon iconfont">&#xe63f;</i></span>
+  					<span>安全设置</span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+  	<div class="right-wrapper member-manage">
+  		<!--右侧第一块-->
+  		<div class="toptitle">
+        <div class="info">
+          <p>只有管理员可以查看和管理企业信息，您可以将管理员身份移交给其他成员，并且需求对方同意</p>
+          <p>以及平台审核，移交后您将不再管理企业，成为普通成员。</p>
+        </div>
+        <button class="btn-line btn-medium">邀请新成员</button>
+  		</div>
+  		<!--右侧第二块-->
+  		<div class="right-list">
+    		<div class="right-list-table">
+    			 <table class="table table-bg  table-striped-even table-height50">
+            <thead>
+              <tr>
+                <th>昵称</th>
+                <th>姓名</th>
+                <th>创建时间</th>
+                <th>角色</th>
+                <th>状态</th>
+                <th>操作</th>
+              </tr>
+       		  </thead>
+            <tbody>
+		          <tr>
+                  <td>zhongyiyutomg</td>
+                  <td>张三</td>
+                  <td>2016-09-08 18:34:00</td>
+                  <td>管理员</td>
+                  <td>正常</td>
+                  <td class="blue"><span class="del" delete-btn>删除</span><span edit>移交管理员</span></td>
+		          </tr>
+	            <tr>
+                 <td>yiyun</td>
+                 <td>李四</td>
+                 <td>2016-09-08 18:34:00</td>
+                 <td>管理员</td>
+                 <td>正常</td>
+                 <td class="blue"><span class="del" delete-btn>删除</span><span edit>移交管理员</span></td>
+		          </tr>
+               <tr>
+                  <td>zhongyiyutomg</td>
+                  <td>张三</td>
+                  <td>2016-09-08 18:34:00</td>
+                  <td>管理员</td>
+                  <td>正常</td>
+                  <td class="blue"><span class="del" delete-btn>删除</span><span edit>移交管理员</span></td>
+              </tr>
+              <tr>
+                 <td>yiyun</td>
+                 <td>李四</td>
+                 <td>2016-09-08 18:34:00</td>
+                 <td>管理员</td>
+                 <td>正常</td>
+                 <td class="blue"><span class="del" delete-btn>删除</span><span class="red">移交中</span></td>
+              </tr>
+            </tbody>
+    	    </table>
+        </div>
+	    </div>
+    </div>
+
+
+</div>
+
+</div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/eject.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+</body>
+</html>

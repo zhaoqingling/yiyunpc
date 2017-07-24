@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>发票管理</title>
+	 <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <!--删除弹窗--> 
+  <div class="eject-big">
+      <div class="prompt-samll" id="" delete-dlog>
+        <div class="prompt-samll-title">删除</div>
+        <!--确认删除-->
+        <div class="prompt-samll-confirm">
+          <ul>
+          <li>确定要删除联系方式吗？</li>
+          <li class="eject-btn">
+            <input type="button" class="btn btn-green btn-120 radius20" value="确定" completed>
+            <input type="button"  class="btn border-green btn-120 radius20" value="取消" cancel>
+          </li>   
+          </ul>
+        </div>
+      </div>  
+    <div class="mask" id="eject-mask"></div>
+  </div>
+  <!--提示弹窗-->
+  <div class="eject-big translater-center-setting-dialog bill-dialog">
+    <div class="prompt-samll" id="setting-dialog" setting-dialog>
+      <div class="prompt-samll-title">提示</div>
+      <!--确认删除-->
+      <div class="prompt-samll-confirm">
+        <ul class="pass-list">
+        <li class="save">
+          开具发票申请提交成功，等待后台审核，通过后将邮寄给您。
+        </li>
+        <li class="eject-btn">
+          <input type="button" id="setting-save-confirm" class="btn btn-green btn-120 radius20" value="确 定">
+        </li>   
+        </ul>
+      </div>
+    </div>  
+    <div class="mask" id="setting-mask"></div>
+  </div>
+  <!--新增/编辑信息弹窗-->
+  <div class="eject-big bill-dialog">
+    <div class="prompt-samll add-msg absolute" id="add-msg">
+      <div class="prompt-samll-title">发票信息</div>
+      <!--普通发票信息-->
+      <div class="prompt-samll-confirm normal-bill">
+        <ul>
+          <li class="form-lable">
+              <ul>
+                <li>
+                  <p class="word">发票类型:</p>
+                  <p>
+
+                    <div class="select-wrap pull-left contact-select">
+                      <div class="select radius drop-down large-select" drop-down>增值税普通发票</i></div>
+                      <div class="select-con undis large-select">
+                        <ul>
+                            <li><a href="javascript:;" id="normal-bill">增值税普通发票</a></li>
+                            <li><a href="javascript:;" id="special-bill">增值税专用发票</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </p>
+                  <p class="error-ms">信息有误</p>
+                </li>
+                <li>
+                  <p class="word">发票抬头:</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li class="post-address">
+                  <p class="word">邮寄地址:</p>
+                  <p><select class="select select-in-small">
+                      <option>国家</option>      
+                  </select></p>
+                  <p class="mr5"><select class="select select-in-small">
+                      <option></option>      
+                  </select></p>
+                  <p class="mr5">省</p>
+                </li>
+                <li class="post-address">
+                  <p class="word">&nbsp;</p>
+                  <p class="mr10"><select class="select select-in-small">
+                      <option></option>      
+                  </select></p>
+                  <p>市</p>
+                   <p id="mg-0">
+                    <input type="text" class="int-text int-large radius" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">邮编：</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">收件人：</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">联系电话：</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+              </ul>
+          </li>
+          <li class="eject-btn">
+            <input type="button" id="add-determine" class="btn btn-green btn-100 radius20" value="确定">
+            <input type="button" id="add-cancel" class="btn border-green btn-100 radius20" value="取消">
+          </li>   
+        </ul>
+      </div>
+      <!--专用发票信息-->
+      <div class="prompt-samll-confirm special-bill" style="display: none;">
+        <ul>
+          <li class="form-lable">
+              <ul>
+                <li>
+                  <p class="word">发票类型:</p>
+                  <div>
+                    <div class="select-wrap pull-left contact-select">
+                      <div class="select radius drop-down large-select" drop-down>增值税专用发票</i></div>
+                      <div class="select-con undis large-select">
+                        <ul>
+                            <li><a href="javascript:;" id="normal-bill">增值税普通发票</a></li>
+                            <li><a href="javascript:;" id="special-bill">增值税专用发票</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p class="word">发票抬头:</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">税务登记证号：</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">注册电话:</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">注册地址:</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">开户银行:</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">银行账号:</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li class="bill-li">
+                  <div class="bill-upload">
+                    <p class="word-register">税务登记证</p>
+                    <p class="word-add">(需加盖公章)</p>
+                    <p class="word-upload"><a href="javascript:;">上传</a></p>
+                  </div>
+                  <div class="bill-upload">
+                    <p class="word-register">税务登记条码页</p>
+                    <p class="word-add">(需加盖公章)</p>
+                    <p class="word-upload"><a href="javascript:;">上传</a></p>
+                  </div>
+                  <div class="bill-upload">
+                    <p class="word-register">税务登记条码页</p>
+                    <p class="word-add">(需加盖公章)</p>
+                    <p class="word-upload"><a href="javascript:;">上传</a></p>
+                  </div>
+                </li>
+                <li class="post-address">
+                  <p class="word">邮寄地址:</p>
+                  <p><select class="select select-in-small">
+                      <option>国家</option>      
+                  </select></p>
+                  <p class="mr5"><select class="select select-in-small">
+                      <option></option>      
+                  </select></p>
+                  <p class="mr5">省</p>
+                  <p class="mr10"><select class="select select-in-small">
+                      <option></option>      
+                  </select></p>
+                  <p>市</p>
+                </li>
+                <li>
+                  <p class="word">&nbsp;</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">邮编：</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">收件人：</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+                <li>
+                  <p class="word">联系电话：</p>
+                  <p id="mg-0">
+                    <input type="text" class="int-text int-xlarge radius large-select" placeholder=""/>
+                  </p>
+                </li>
+              </ul>
+          </li>
+          <li class="eject-btn">
+            <input type="button" id="add-determine" class="btn btn-green btn-100 radius20" value="确定">
+            <input type="button" id="add-cancel" class="btn border-green btn-100 radius20" value="取消">
+          </li>   
+        </ul>
+      </div>
+    </div>  
+    <div class="mask" id="eject-mask"></div>
+  </div>
+	<!--头部-->
+	<div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li class="current"><a href="#">我是客户</a></li>
+  				<li><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="#">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">爱大脸大脸爱大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><i class="icon-user"></i><a href="#">个人信息</a></li>
+		  				<li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+		  				<li><i class="icon-off"></i><a href="#">退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  <!--内侧内容区域-->
+  <div class="cloud-wrapper">
+  	<!--左侧菜单-->
+  	<div class="left-subnav">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip1"></p>
+  				</li>
+  			</ul>
+  		</div>
+
+  		<div class="left-list">
+  			<ul>
+  				<li>
+  					<a href="我的订单-下过订单.html">
+  					<span><i class="icon iconfont">&#xe645;</i></span>
+  					<span>我的首页</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的订单.html">
+  					<span><i class="icon iconfont">&#xe64a;</i></span>
+  					<span>我的订单</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的账户.html">
+  					<span><i class="icon iconfont">&#xe648;</i></span>
+  					<span>我的账户</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="优惠卷.html">
+  					<span><i class="icon iconfont">&#xe644;</i></span>
+  					<span>优惠券</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的级别.html">
+  					<span><i class="icon iconfont">&#xe647;</i></span>
+  					<span>我的级别</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的积分.html">
+  					<span><i class="icon iconfont">&#xe605;</i></span>
+  					<span>我的积分</span>
+  					</a>
+  				</li>
+  				<li class="current">
+  					<a href="发票管理.html">
+  					<span><i class="icon iconfont">&#xe643;</i></span>
+  					<span>发票管理</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="企业中心.html">
+  					<span><i class="icon iconfont">&#xe6f8;</i></span>
+  					<span>企业中心</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="个人信息.html">
+  					<span><i class="icon iconfont">&#xe642;</i></span>
+  					<span>个人信息</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="安全设置.html">
+  					<span><i class="icon iconfont">&#xe63f;</i></span>
+  					<span>安全设置</span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+  	<div class="right-wrapper">
+  		<!--右侧第一块-->
+  		<div class="invoice-notice">
+        <h3>注意事项</h3>
+        <ul>
+          <li>    
+            1.请您正确填写以下信息，若因填写错误导致发票有误， 将无法重新开具发票
+          </li>
+          <li>
+            2.订单可开发票有效期为一年，超出则无法开具发票
+          </li>
+          <li>
+            3.发票开具时间需要3-5个工作日，工作人员核对无误后将为您邮寄发票
+          </li>
+          <li>
+            4.发票邮寄费用需客户承担
+          </li>
+          <li>
+            5.发票内容统一为“翻译费”
+          </li>
+          <li>
+            6.如有疑问，请致电400-119-8080
+          </li>
+        </ul>
+      </div>
+  		<!--右侧第二块--> 
+      <div class="select-order mt-20 mb-30">
+        <h4>选择订单</h4>
+        <div class="select-bill">
+        <div class="table-bill"> 
+        <table class="table table-bg stripe bill">
+          <thead>
+            <tr>
+              <td width="6.81%"></td>
+              <td width="29.54%">订单号</td>
+              <td width="32.38%">订单时间</td>
+              <td width="31.27%">金额（元）</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+             <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+             <tr>
+              <td>
+                <span class="select-check"></span>
+              </td>
+              <td>652462458</td>
+              <td>1987-11-04 08:18:08</td>
+              <td>234.12</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="bill-showMore">
+            <p><a href="">加载更多……</a></p>
+        </div>
+        </div>
+        
+        <div class="table-bottom">
+          <div class="total mb-10">
+            <label>开票总额：</label>
+            <span>634.12元</span>
+          </div>
+          <div class="remark">
+            <label>备注：</label>
+            <input type="text" placeholder="若一个订单开多张发票，请在备注中说明">
+          </div>
+        </div>
+        <!--发票信息-->
+        <div class="invoice-info">
+          <h4>发票信息</h4>
+          <ul class="clearfix">
+            <li class="pull-left invoice-card current">
+              <label></label>
+              <p>
+                <span class="key">发票类型：</span>
+                <span class="value">增值税普通发票</span>
+              </p>
+              <p>
+                <span class="key">发票抬头：</span>
+                <span class="value">中译语通科技（北京）有限公司</span>
+              </p>
+              <p>
+                <span class="key pull-left">邮寄地址：</span>
+                <span class="value cut">北京市石景山区石景山路20号中铁建设大厦16层（100043）</span>
+              </p>
+              <p class="ml-20 mb-5">
+                <span class="key">收件人：</span>
+                <span class="value">中译语通（1592221234）</span>
+              </p>
+              <div class="operate clearfix">
+                <a href="#" class="pull-left">展开</a>
+                <i class="delete-img" delete-btn></i>
+                <i class="edit-img" edit-btn></i>
+              </div>
+            </li>
+            <li class="pull-left invoice-card">
+              <label></label>
+              <p>
+                <span class="key">发票类型：</span>
+                <span class="value">增值税普通发票</span>
+              </p>
+              <p>
+                <span class="key">发票抬头：</span>
+                <span class="value">中译语通科技（北京）有限公司</span>
+              </p>
+              <p>
+                <span class="key pull-left">邮寄地址：</span>
+                <span class="value cut">北京市石景山区石景山路20号中铁建设大厦16层（100043）</span>
+              </p>
+              <p class="ml-20 mb-5">
+                <span class="key">收件人：</span>
+                <span class="value">中译语通（1592221234）</span>
+              </p>
+              <div class="operate clearfix">
+                <a href="#" class="pull-left">展开</a>
+                <i class="delete-img" delete-btn></i>
+                <i class="edit-img" edit-btn></i>
+              </div>
+            </li>
+          </ul>
+          <span class="add-invoice" add-invoice>添加发票信息</span>
+          <span class="limit">(发票最多可保存5条)</span>
+        </div>
+        <div class="recharge-btn save-btn">
+          <input type="button" class="btn btn-green btn-xxxlarge radius10" value="保存"  save>
+        </div>
+      </div>    		
+		</div>
+  </div>		
+</div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+<script>
+  $(function(){
+   /*点击checkbox*/
+    $(document).on('click','.select-order table .select-check',function(){
+        if(!$(this).hasClass('active')){
+          $(this).addClass('active');
+          $(this).parents('tr').addClass('selecter');
+        }else{
+          $(this).removeClass('active');
+          $(this).parents('tr').removeClass('selecter');
+        }
+         return false;
+    });
+
+    /*切换发票状态*/
+    $(document).on('click','.invoice-info .invoice-card',function(){
+        $('.invoice-info .invoice-card').each(function(){
+          $(this).removeClass('current');
+        });
+        $(this).addClass('current');
+    });
+
+    //删除弹窗
+    $(document).on('click','.delete-img',function(){
+        $('#eject-mask').css('display','block');
+        $('[delete-dlog]').css('display','block');
+    });
+
+    //提示弹窗
+    $(document).on('click','[save]',function(){
+        $('#eject-mask').css('display','block');
+        $('[setting-dialog]').css('display','block');
+    });
+
+    //新增/编辑弹窗
+    $(document).on('click','[add-invoice],[edit-btn]',function(){
+        $('#eject-mask').css('display','block');
+        $('.add-msg').css('display','block');
+    });
+    $(document).on('click','#add-determine,#add-cancel',function(){
+        $('#eject-mask').css('display','none');
+        $('.add-msg').css('display','none'); 
+    });
+    $(document).on('click','ul li a',function(){
+      var text = $(this).text();
+      if (text == '增值税专用发票') {
+        $('[drop-down]').text('增值税专用发票');
+        $('.normal-bill').css('display','none');
+        $('.special-bill').css('display','block');
+      }else{
+        $('[drop-down]').text('增值税普通发票');
+        $('.normal-bill').css('display','block');
+        $('.special-bill').css('display','none');
+      }
+    });
+  });
+</script>
+</body>
+</html>

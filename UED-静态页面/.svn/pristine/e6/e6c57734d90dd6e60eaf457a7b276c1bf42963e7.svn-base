@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>译员-译员认证第三步（测试中）</title>
+  <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+  <link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <!--头部-->
+  <div class="header-big">
+    <div class="cloud-header">
+      <div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+      <!--导航-->
+      <div class="cloud-nav">
+        <ul>
+          <li class="current"><a href="#">我是客户</a></li>
+          <li><a href="#">我是服务方</a></li>
+        </ul>
+      </div>
+      <!--导航-->
+      <div class="cloud-breadcrumb">
+        <ul>
+          <li class="switch" id="switch" >
+            <a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+              <div class="switch-hover" style="display:none;">
+                <ul>
+                  <li><a href="#">简体中文</a></li>
+                  <li class="border-none"><a href="#">English</a></li>
+                </ul>
+                </div>
+          </li>
+          <li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+          <li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+          <li class="user" id="user"><a href="#" class="yonh">爱大脸大脸爱大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+          <div class="show-hover" style="display:none;">
+            <ul>
+              <li><i class="icon-user"></i><a href="#">个人信息</a></li>
+              <li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+              <li><i class="icon-off"></i><a href="#">退出</a></li>
+            </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+    <!--内侧内容区域-->
+    <div class="translate-cloud-wrapper">
+      <!--左侧菜单-->
+    <div class="left-subnav interpreter-subanav">
+      <div class="left-title">
+        <ul>
+          <li class="user"><img src="../images/icon.jpg" /></li>
+          <li class="word">
+            <p>大脸盼爱大脸</p>
+            <p class="vip1"></p>
+          </li>
+        </ul>
+      </div>
+      <div class="left-list">
+        <ul>
+          <li class="side-bar current">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe645;</i></span>
+            <span>我的首页</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+             <span><i class="icon iconfont">&#xe641;</i></span>
+             <span>发现订单</span>
+            </a>
+            <ul>
+              <li class="list-p"><a href="#" class="">订单大厅<span> (99+)</span></a></li>
+              <li class="list-p"><a href="#">分配订单 <span> (7)</span></a></li>
+            </ul>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe64a;</i></span>
+            <span>我的订单</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe644;</i></span>
+            <span>优惠券</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe647;</i></span>
+            <span>译员级别</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe640;</i></span>
+            <span>工作记录</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe646;</i></span>
+            <span>LSP管理</span>
+            </a>
+            <ul>
+              <li class="list-p"><a href="#">LSP信息</a></li>
+              <li class="list-p"><a href="#">人员管理</a></li>
+              <li class="list-p"><a href="#">LSP工作记录</a></li>
+              <li class="list-p"><a href="#">LSP账单</a></li>
+            </ul>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe642;</i></span>
+            <span>个人信息</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe63f;</i></span>
+            <span>安全设置</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!--定位-->
+      <div class="locationaaa">
+      <div class="left-phone">
+        <p><i class="icon iconfont">&#xe60d;</i></p>
+        <p class="phone-word">
+          <span>早9:00-晚7:00</span>
+          <span class="red">400-119-8080</span>
+        </p>
+      </div>
+      <div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+      </div>
+    </div>
+      <!--右侧内容-->
+      <!--右侧大块-->
+      <div class="right-wrapper third-testing">
+        <!--订单详细待确认-->
+        <div class="step-big"> 
+          <!--步骤-->
+          <div class="step">
+            <!--完善议员信息-->
+            <div class="step-none adopt-green-border alr-completed">
+              <p class="green-line short"></p>
+              <ul>
+                <li class="circle"><i class="icon iconfont">&#xe60e;</i></li>
+                <li class="word">完善议员信息</li>
+              </ul>
+              <p class="green-line short"></p>
+            </div>
+            <!--填写翻译简历-->
+            <div class="step-none adopt-green-border alr-completed">
+              <p class="green-line"></p>
+              <ul>
+                <li class="circle"><i class="icon iconfont">&#xe60e;</i></li>
+                <li class="word">填写翻译简历</li>
+              </ul>
+              <p class="green-line"></p>
+            </div>
+            <!--语言测试-->
+            <div class="step-none adopt-green-border">
+              <p class="green-line"></p>
+              <ul>
+                <li class="circle"><i class="">3</i></li>
+                <li class="word">语言测试</li>
+              </ul>
+              <p class="green-line short"></p>
+            </div>
+          </div>
+        </div>
+        <!--蒙版-->
+        <div class="prompt-modal"></div>
+        <!--切换语言提示-->
+        <div class="prompt-box">
+          <div class="prompt-header">
+            <span>提示</span>
+          </div>
+          <div class="prompt-content">
+            <p>您当前语言的测试还没有完成，若选择其他语种测试，则当前测试将无法保留，需要重新测试，确定选择其他测试语言吗？</p>
+          </div>
+          <div class="prompt-footer">
+            <button class="confirm">确定</button>
+            <button class="cancel">取消</button>
+          </div>
+        </div>
+        <!--超时提示-->
+        <div class="overtime-box">
+          <div class="overtime-header">
+            <span>超时提示</span>
+          </div>
+          <div class="overtime-content">
+            <p>很遗憾，您已经超时，没有完成本次测试</p>
+          </div>
+          <div class="overtime-footer">
+            <button class="confirm">重新测试</button>
+            <button class="cancel">取消</button>
+          </div>
+        </div>
+        <!--测试table-->
+        <div class="testing-table mt-20"> 
+          <div class="tab-bar">
+            <ul>
+              <li tab-li><a href="#" class="current">中文→英文<span class="not-tested"></span></a></li>
+              <li tab-li><a href="#">中文→日文<span class="not-tested tested"></span></a></li>
+              <li tab-li><a href="#">中文→西班牙语<span class="not-tested"></span></a></li>
+            </ul>
+          </div>
+          <div class="testing-con" test-con>
+            <div class="tab-con">
+              <div class="tip-msg">
+                  <p class="pull-left txt">您好，请您在30分钟内完成下列测试题目，以便我们将对您的翻译进行评级。</p>
+                  <p class="pull-left surplus-time">剩余时间:<span class="time">30</span>分钟</p>
+              </div>
+              <div>
+                <ol>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">As the information requested in our letter dated October 29 is now urgently required, your early reply would be highly appreciated（ ）。</p>
+                    <ol class="answer-list">
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                    </ol>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">As the information requested in our letter dated October 29 is now urgently required, your early reply would be highly appreciated（ ）。</p>
+                    <ol class="answer-list">
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                    </ol>
+                  </li>
+                  <li class="item">
+                    <p class="title">请翻译以下内容</p>
+                    <div class="big-con">
+                      <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</div>
+                      <textarea class="int-text tran-answer"></textarea>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="recharge-btn confirm-btn">
+                <input type="button" class="btn btn-green btn-xxxlarge radius10" value="确定">
+              </div>
+            </div>
+          </div>
+          <div class="testing-con undis" test-con>
+            <div class="tab-con">
+              <div class="tip-msg">
+                  <p class="pull-left txt">您好，请您在30分钟内完成下列测试题目，以便我们将对您的翻译进行评级。</p>
+                  <p class="pull-left surplus-time">剩余时间:<span class="time">30</span>分钟</p>
+              </div>
+              <div>
+                <ol>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">As the information requested in our letter dated October 29 is now urgently required, your early reply would be highly appreciated（ ）。</p>
+                    <ol class="answer-list">
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                    </ol>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">As the information requested in our letter dated October 29 is now urgently required, your early reply would be highly appreciated（ ）。</p>
+                    <ol class="answer-list">
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                    </ol>
+                  </li>
+                  <li class="item">
+                    <p class="title">请翻译以下内容</p>
+                    <div class="big-con">
+                      <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</div>
+                      <textarea class="int-text tran-answer"></textarea>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="recharge-btn confirm-btn">
+                <input type="button" class="btn btn-green btn-xxxlarge radius10" value="确定">
+              </div>
+            </div>
+          </div>
+          <div class="testing-con undis" test-con>
+            <div class="tab-con">
+              <div class="tip-msg">
+                  <p class="pull-left txt">您好，请您在30分钟内完成下列测试题目，以便我们将对您的翻译进行评级。</p>
+                  <p class="pull-left surplus-time">剩余时间:<span class="time">30</span>分钟</p>
+              </div>
+              <div>
+                <ol>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">As the information requested in our letter dated October 29 is now urgently required, your early reply would be highly appreciated（ ）。</p>
+                    <ol class="answer-list">
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                    </ol>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">力大如牛用英语正确翻译为as strong as a（ ）。</p>
+                    <ul class="answer-list">
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i>horse</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>cattle</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>lion</a></li>
+                      <li class="horizontal answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i>tiger</a></li>
+                    </ul>
+                  </li>
+                  <li class="item">
+                    <p class="title">As the information requested in our letter dated October 29 is now urgently required, your early reply would be highly appreciated（ ）。</p>
+                    <ol class="answer-list">
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2 icon-radioed"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                      <li class="vartical answer" answer><a href="javascitpt:;"><i class="icon-radio2"></i> 由于我方急需10月29日去信要求的信息，蒙贵方及早答复，不胜感激。</a></li>
+                    </ol>
+                  </li>
+                  <li class="item">
+                    <p class="title">请翻译以下内容</p>
+                    <div class="big-con">
+                      <div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</div>
+                      <textarea class="int-text tran-answer"></textarea>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="recharge-btn confirm-btn">
+                <input type="button" class="btn btn-green btn-xxxlarge radius10" value="确定">
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+<script type="text/javascript">
+  $(function(){
+
+    //选择答案
+    $(document).on('click', '[answer]', function(){
+      $(this).find('.icon-radio2').addClass('icon-radioed');
+      $(this).siblings().find('.icon-radio2').removeClass('icon-radioed');
+    });
+
+    //tab切换
+    var index;
+    var that
+    $(document).on('click','[tab-li]', function(){
+      $('.third-testing .prompt-modal').css('display','block');
+      $('.third-testing .prompt-box').css('display','block');
+      index = $(this).index();
+      that=this;
+    });
+
+    //提示窗确认
+    $(document).on('click','.confirm', function(){
+      $('.third-testing .prompt-modal').css('display','none');
+      $('.third-testing .prompt-box').css('display','none');
+      $('.third-testing .overtime-box').css('display','none');
+      $(that).find('a').addClass('current');
+      $(that).siblings().find('a').removeClass('current');
+      $(that).parents('.tab-bar').siblings('.testing-con').addClass('undis').eq(index).removeClass('undis');
+    });
+
+    //提示窗取消
+    $(document).on('click','.cancel', function(){
+      $('.third-testing .prompt-modal').css('display','none');
+      $('.third-testing .prompt-box').css('display','none');
+      $('.third-testing .overtime-box').css('display','none');
+    });
+
+    //超时提醒
+    var settime=setTimeout(function(){
+      $('.third-testing .prompt-modal').css('display','block');
+      $('.third-testing .overtime-box').css('display','block');
+    },3000);
+  });
+</script>
+</body>
+</html>

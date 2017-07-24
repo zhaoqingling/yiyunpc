@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <link href="css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/modular.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/frame.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<!--分享弹出框-->
+	<div class="eject-big">
+		<div class="prompt-share" id="share-eject">
+		<div class="prompt-share-title">请选择</div>
+		<!--确认删除-->
+		<div class="prompt-share-confirm">
+			<ul>
+				<a href="#">
+				<li class="weix">
+					<p><i class="icon iconfont">&#xe61a;</i></p>
+					<p>微信</p>
+				</li>
+				</a>
+				<a href="#">
+				<li class="weixq">
+					<p><i class="icon iconfont">&#xe61f;</i></p>
+					<p>微信朋友圈</p>
+				</li>
+				</a>
+				<a href="#">
+				<li class="blog">
+					<p><i class="icon iconfont">&#xe627;</i></p>
+					<p>微博</p>
+				</li>
+				</a>
+				<a href="#">
+				<li class="qq">
+					<p><i class="icon iconfont">&#xe61e;</i></p>
+					<p>QQ</p>
+				</li>
+				</a>
+				<a href="#">
+				<li class="watercress">
+					<p><i class="icon iconfont">&#xe625;</i></p>
+					<p>豆瓣</p>
+				</li>
+				</a>
+				<a href="#">
+				<li class="message">
+					<p><i class="icon iconfont">&#xe622;</i></p>
+					<p>短信</p>
+				</li>
+				</a>
+				<a href="#">
+				<li class="copy">
+					<p><i class="icon iconfont">&#xe620;</i></p>
+					<p>复制链接</p>
+				</li>
+				</a>
+			</ul>
+		</div>
+		<div class="close-icon"><i class="icon iconfont" id="close-icon">&#xe611;</i></div>
+		</div>	
+	<div class="mask" id="eject-mask"></div>
+	</div>
+<!--弹出框结束-->
+	<div class="wrapper-big"><!--包含除底部外的所有层-->
+	<section class="notice">
+		<p><marquee scrolldelay="150">公告信息等等等等</marquee></p>
+		<label><i class="icon iconfont">&#xe618;</i></label>
+	</section>
+	<nav class="wap-nav">
+		<ul>
+			<li class="logo"><img src="images/logo.png" /></li>
+			<li class="right"><a href="#" class="btn login-btn">登录</a></li>
+		</ul>
+	</nav>
+	<section class="index-wrapper">
+	<!--转换语言-->
+	<section class="testing">
+		<p>
+			<select class="select testing-select">
+				<option>中文</option>	
+				<option>英文</option>	
+			</select>
+			<span>|</span>
+		</p>
+		<p class="test-icon1"><i class="icon iconfont">&#xe66d;</i></p>
+		<p>
+			<select class="select testing-select">
+				<option>英文</option>	
+				<option>中文</option>	
+			</select>
+			<span>|</span>
+		</p>
+	</section>
+	<!--翻译内容-->
+	<section class="translation-content">
+		<textarea class="textarea textarea-large" name="chick-int" id="chick-int"></textarea>
+		<a hrel="#"><i class="icon iconfont">&#xe618;</i></a>
+		<label>已输入<span>245</span>字，最多可输入2000字</label>
+	</section>
+	<!--翻译按钮-->
+	<section class="translate-btn" id="chick-btn">
+		<a href="#" class="submit-btn btn-blue">翻译</a>
+	</section>
+	<!--翻译结果-->
+	<section class="translation-content-english" id="results">
+		<textarea class="textarea textarea-xlarge"></textarea>
+		<p>
+			<label>阿萨德撒的</label>
+			<a href="#"><i class="icon iconfont ash">&#xe61b;</i></a>
+			<a href="#"><img src="images/voice.gif"></a>
+			<a href="#" id="share-icon"><i class="icon iconfont">&#xe61c;</i></a>
+		</p>
+	</section>
+	
+	</section>
+	<section id="wrapper-hide" >
+	<section class="index-wrapper">
+	<!--历史纪录-->
+	<section class="history">
+		<div class="history-list">
+			<ul>
+				<a href="javascript:">
+					<li>
+						<p><i class="icon iconfont">&#xe624;</i></p>
+						<p class="word">就显示一行 就显示一行显示一行</p>
+						<p class="word-en">yiwen yiwen yiwen</p>
+						<p class="right"><i class="icon iconfont">&#xe618;</i></p>
+					</li>
+				</a>
+				<a href="javascript:">
+					<li>
+						<p><i class="icon iconfont">&#xe624;</i></p>
+						<p class="word">就显示一行 就显示一行显示一行</p>
+						<p class="word-en">yiwen yiwen yiwen</p>
+						<p class="right"><i class="icon iconfont">&#xe618;</i></p>
+					</li>
+				</a>
+			</ul>
+		</div>
+	</section>
+	
+	</section>
+	<!--banner-->
+	<section class="banner"><a href="#"><img src="images/banner-1.png"></a></section>
+	<section class="slider">
+		<section class="slider-img" id="slider">
+			<ol>
+				<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad1" /></a></li>
+				<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad2" /></a></li>
+				<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad3" /></a></li>
+				<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad4" /></a></li>
+				<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad5" /></a></li>
+			</ol>
+		</section>
+		<ul class="slider-num" id="slideNum"></ul>
+	</section>
+	</section>	
+</div>
+
+	<!--底部-->	
+	<section class="index-footer-big">
+	<section class="terminal">
+		<ul>
+			<li class="none">
+				<p><img src="images/icon-1.png" /></p>
+				<p>客户端</p>
+			</li>
+			<li class="tow current">
+				<p><img src="images/icon-2.png" /></p>
+				<p>触屏版</p>
+			</li>
+			<li class="three none-ml">
+				<p><img src="images/icon-3.png" /></p>
+				<p>电脑版</p>
+			</li>
+		</ul>
+	</section>
+	<footer class="footer">
+		<ul>
+			<li><a hrel="#">关于我们</a>|<a hrel="#">译云招募</a><!--|<a hrel="#">意见反馈</a>|<a hrel="#">ENGLISH</a>--></li>
+			<li class="ash">中译语通科技（北京）有限公司版权所有</li>
+			<li class="ash">京ICP备13002826号-7</li>
+		</ul>
+	</footer>
+	</section>
+	<div id="index-btnshow" style="display:none;">
+		<div class="release-showbj" id="release-showbj"></div>
+		<div class="release-btn" id="release-btn"><a href="#">发布翻译需求</a></div>
+	</div>
+	
+	<script>
+//	window.onscroll = function(){
+//	var rbtn=document.getElementById('release-btn');
+//	var rbtnshow=document.getElementById('release-showbj');
+//  var t = document.documentElement.scrollTop || document.body.scrollTop;  //离上方的距离
+//  var h =window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight; //可见宽度
+//  if( t >= document.documentElement.scrollHeight -h ) {
+//     rbtn.style.display='block';
+//     rbtnshow.style.display='block';
+//  }
+//}
+//$(window).scroll(function () {
+//  if ($(document).scrollTop() + $(window).height() >= $(document).height()) {
+//      $('#index-btnshow').css("display","block");
+//  }
+//});
+document.getElementsByTagName("body")[0].onscroll=function(){
+	var rbtn=document.getElementById('index-btnshow');
+	if(document.getElementsByTagName("body")[0].scrollTop>10){
+	rbtn.style.display='block';
+}}
+
+</script>
+</body>
+</html>
+<script type="text/javascript" src="scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="scripts/modular/global.js"></script>
+<script type="text/javascript" src="scripts/modular/frame.js"></script>
+<script type="text/javascript" src="scripts/modular/eject.js"></script>
+<script type="text/javascript" src="scripts/modular/jquery.slider.js"></script>
+<script type="text/javascript">
+$(function(){
+	/*广告效果*/
+	$('#slider').slider({
+		speed:400,
+		timeout:4000,
+		auto:true,
+		pager:'#slideNum'
+	});
+})
+</script>

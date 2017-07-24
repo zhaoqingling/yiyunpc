@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>译员-设置</title>
+ 	<link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--弹出--> 
+<div class="eject-big">
+    <div class="prompt-samll" id="modify-password">
+    <div class="prompt-samll-title">移除译员</div>
+    <!--确认删除-->
+    <div class="prompt-samll-confirm">
+      <ul class="pass-list">
+      <li>
+        确定从LSP团队中移除该译员？
+      </li>
+      <li class="eject-btn">
+        <input type="button" id="modify-determine" class="btn btn-green btn-120 radius20" value="确 定">
+        <input type="button" id="modify-close" class="btn border-green btn-120 radius20" value="取 消">
+      </li>   
+      </ul>
+    </div>
+    </div>  
+  <div class="mask" id="eject-mask"></div>
+</div>
+<!--/弹出结束-->  
+<!--弹出--> 
+<div class="eject-big translater-center-setting-dialog">
+    <div class="prompt-samll" id="setting-dialog">
+    <div class="prompt-samll-title">提示</div>
+    <!--确认删除-->
+    <div class="prompt-samll-confirm">
+      <ul class="pass-list">
+      <li class="save">
+        资料保存成功
+      </li>
+      <li class="eject-btn">
+        <input type="button" id="setting-save-confirm" class="btn btn-green btn-120 radius20" value="确 定">
+      </li>   
+      </ul>
+    </div>
+    </div>  
+  <div class="mask" id="setting-mask"></div>
+</div>
+<!--/弹出结束-->  
+<!--弹出--> 
+<!-- <div class="eject-big translater-center-setting-dialog">
+    <div class="prompt-samll" id="setting-dialog1">
+    <div class="prompt-samll-title">提示</div>
+    <!--确认删除-->
+    <!-- <div class="prompt-samll-confirm">
+      <ul class="pass-list">
+      <li class="save">
+        译员已移除团队
+      </li>
+      <li class="eject-btn">
+        <input type="button" id="setting-save-confirm1" class="btn btn-green btn-120 radius20" value="确 定">
+      </li>   
+      </ul>
+    </div>
+    </div>  
+  <div class="mask" id="setting-mask1"></div>
+</div>-->
+<!--/弹出结束--> 
+	<!--头部-->
+	<div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li><a href="#">我是客户</a></li>
+  				<li class="current"><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="#">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">爱大脸大脸爱大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><i class="icon-user"></i><a href="#">个人信息</a></li>
+		  				<li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+		  				<li><i class="icon-off"></i><a href="#">退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  <!--内侧内容区域-->
+   <div class="translate-cloud-wrapper">
+  	<!--左侧菜单-->
+  	<div class="left-subnav interpreter-subanav">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip1"></p>
+  				</li>
+  			</ul>
+  		</div>
+  		<div class="left-list">
+        <ul>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe645;</i></span>
+            <span>我的首页</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+             <span><i class="icon iconfont">&#xe641;</i></span>
+             <span>发现订单</span>
+            </a>
+            <ul>
+              <li class="list-p"><a href="#" class="">订单大厅<span> (99+)</span></a></li>
+              <li class="list-p"><a href="#">分配订单 <span> (7)</span></a></li>
+            </ul>
+          </li>
+          <li class="side-bar current">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe64a;</i></span>
+            <span>我的订单</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe644;</i></span>
+            <span>优惠券</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe647;</i></span>
+            <span>译员级别</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe640;</i></span>
+            <span>工作记录</span>
+            </a>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe646;</i></span>
+            <span>LSP管理</span>
+            </a>
+            <ul>
+              <li class="list-p"><a href="#">LSP信息</a></li>
+              <li class="list-p"><a href="#">人员管理</a></li>
+              <li class="list-p"><a href="#">LSP工作记录</a></li>
+              <li class="list-p"><a href="#">LSP账单</a></li>
+            </ul>
+          </li>
+          <li class="side-bar">
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe642;</i></span>
+            <span>个人信息</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="side-title">
+            <span><i class="icon iconfont">&#xe63f;</i></span>
+            <span>安全设置</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  		
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+	
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+    <div class="right-wrapper translater-center-setting">
+  	 <div class="right-list mt-0">
+        <div class="translater-setting quesbox">
+          <ul class="con quesbox-wrap">
+            <li>
+               <label class="key">姓名：</label>
+               <p class="value">大脸盼</p>
+            </li>
+            <li>
+               <label class="key">等级：</label>
+               <p class="value">高级译员</p>
+            </li>
+            <li>
+               <label class="key">角色：</label>
+               <div class="select-wrap">
+                    <div class="select radius drop-down" drop-down>译员</i></div>
+                    <div class="select-con undis">
+                      <ul>
+                          <li><a href="javascript:;">译云翻译1</a></li>
+                          <li><a href="javascript:;">译云翻译2</a></li>
+                          <li><a href="javascript:;">译云翻译3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </li>
+            <li>
+               <label class="key">进行中的订单：</label>
+               <p class="value"><span>3728389</span>;<span>38481939</span>;<span></span>48194878</p>
+            </li>
+            <li>
+              <label class="key">翻译标价：</label>
+              <div class="value">
+              <div class="transslate-price">
+                  <p class="txt1 inputp1">
+                      <span class="setting-input">中文→英语</span>
+                      <span class="setting-price"><strong>200</strong>元/千字</span>
+                      <input type="button" name="1.1" class="btn biu-btn btn-auto-25 btn-green radius10" value="编 辑" setting-save-btn1>
+                  </p>
+                  <p class="txt1 inputp2">
+                      <span class="setting-input">中文→英语</span>
+                      <span class="setting-price"><strong>200</strong>元/千字</span>
+                      <input type="button" name="1.2" class="btn biu-btn btn-auto-25 btn-green radius10" value="编 辑" setting-save-btn1>
+
+                  </p>
+                  <p class="inputext"></p>
+              </div>
+              </div>
+            </li>
+            <li class="area">
+               <label class="key">领域：</label>
+               <p class="value"><span>化工</span><span>科学</span><span>生物化学</span><span>通用</span></p>
+            </li>
+             <li class="area">
+               <label class="key">用途：</label>
+               <p class="value"><span>化工</span><span>科学</span></p>
+            </li>
+            <li>
+               <label class="key">备注：</label>
+               <textarea class="int-text textarea radius" placeholder="擅长什么"></textarea>
+            </li>
+          </ul>
+          <!--按钮-->
+          <div class="recharge-btn order-btn">
+          <input type="button" id="password-btn" class="btn btn-red btn-xxxlarge radius10" value="移除">
+          <input type="button"  class="btn btn-green btn-xxxlarge radius10 ml-20" value="保存" setting-save-btn>
+        </div>
+        </div>
+     </div>	
+	 
+    </div>
+  	
+  	
+  </div>
+  		
+  </div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/setUp.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/eject.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+</body>
+</html>

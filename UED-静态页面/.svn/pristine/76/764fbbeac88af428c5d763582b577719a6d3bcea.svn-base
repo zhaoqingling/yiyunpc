@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>优惠卷</title>
+    <link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/icheck.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<!--头部-->
+	<div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li class="current"><a href="#">我是客户</a></li>
+  				<li><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="http://www.baidu.com">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><a href="http://www.baidu.com"><i class="icon-user"></i>个人信息</a></li>
+		  				<li><a href="http://www.baidu.com"><i class="icon-lock"></i>安全设置</a></li>
+		  				<li class="border-none"><a href="http://www.baidu.com"><i class="icon-off"></i>退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  			
+  		</div>
+  	</div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  <!--内侧内容区域-->
+  <div class="cloud-wrapper">
+  	<!--左侧菜单-->
+  	<div class="left-subnav">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip1"></p>
+  				</li>
+  			</ul>
+  		</div>
+
+  		<div class="left-list" >
+  			<ul>
+  				<li>
+  					<a href="我的订单-下过订单.html">
+  					<span><i class="icon iconfont">&#xe645;</i></span>
+  					<span>我的首页</span>
+  					</a>
+  				</li>
+  				<li class="current">
+  					<a href="我的订单.html">
+  					<span><i class="icon iconfont">&#xe64a;</i></span>
+  					<span>我的订单</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的账户.html">
+  					<span><i class="icon iconfont">&#xe648;</i></span>
+  					<span>我的账户</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="优惠卷.html">
+  					<span><i class="icon iconfont">&#xe644;</i></span>
+  					<span>优惠券</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的级别.html">
+  					<span><i class="icon iconfont">&#xe647;</i></span>
+  					<span>我的级别</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的积分.html">
+  					<span><i class="icon iconfont">&#xe605;</i></span>
+  					<span>我的积分</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="发票管理.html">
+  					<span><i class="icon iconfont">&#xe643;</i></span>
+  					<span>发票管理</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="企业中心.html">
+  					<span><i class="icon iconfont">&#xe6f8;</i></span>
+  					<span>企业中心</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="个人信息.html">
+  					<span><i class="icon iconfont">&#xe642;</i></span>
+  					<span>个人信息</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="安全设置.html">
+  					<span><i class="icon iconfont">&#xe63f;</i></span>
+  					<span>安全设置</span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+  	<div class="right-wrapper">	
+  		<!--右侧第二块-->
+  		<div class="right-list mt-0">
+  			<div class="oder-table">
+  				<ul>
+  					<li><a href="#"  class="current">未使用（9）</a></li>
+  					<li><a href="#">已使用（4)</a></li>
+  					<li><a href="#">已过期（4）</a></li>
+  				</ul>
+  			</div>
+  			<div id="table-da1">
+				<div class="coupon" id="coupon">
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="yellow">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="yellow">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+				</div>
+		  <div class="biu-paging paging-large">
+			 	<ul>
+				     <li class="prev-up"><a href="#"><</a></li>
+				     <li class="active"><a href="#">1</a></li>
+				     <li><a href="#">2</a></li>
+				     <li><a href="#">3</a></li>
+				     <li><a href="#">4</a></li>
+				     <li><a href="#">5</a></li>
+				     <li><a href="#">6</a></li>
+				     <li><a href="#">……</a></li>
+				     <li><a href="#">100</a></li>
+				     <li class="next-down"><a href="#">></a></li>
+				     <p>
+						<span>到</span>
+						<span><input type="text" class="int-verysmall radius"></span>
+						<span>页</span>
+					</p>
+					<p class="taiz"><a href="#">跳转</a></p>
+			  	 </ul>
+			</div>
+  			</div>
+			<div id="table-da2" style="display:none;">
+				<div class="coupon" id="coupon">
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="yellow">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="yellow">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+				</div>
+		  <div class="biu-paging paging-large">
+			 	<ul>
+				     <li class="prev-up"><a href="#"><</a></li>
+				     <li class="active"><a href="#">1</a></li>
+				     <li><a href="#">2</a></li>
+				     <li><a href="#">3</a></li>
+				     <li><a href="#">4</a></li>
+				     <li><a href="#">5</a></li>
+				     <li><a href="#">6</a></li>
+				     <li><a href="#">……</a></li>
+				     <li><a href="#">100</a></li>
+				     <li class="next-down"><a href="#">></a></li>
+				     <p>
+						<span>到</span>
+						<span><input type="text" class="int-verysmall radius"></span>
+						<span>页</span>
+					</p>
+					<p class="taiz"><a href="#">跳转</a></p>
+			  	 </ul>
+			</div>
+  			</div>
+			<div id="table-da3" style="display:none;">
+				<div class="coupon" id="coupon">
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="yellow">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="yellow">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="ash">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="blue">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+					<ul class="red">
+						<li>
+							<p class="money">¥<span>1000</span></p>
+							<p><a hrel="#">马上下单</a></p>
+						</li>
+						<li>满¥2000可用</li>
+						<li style="margin-bottom:5px;">仅可在中英翻译服务中使用</li>
+						<li class="bj">有效期:2015/03-15 - 2015/06/14</li>
+					</ul>
+				</div>
+		  <div class="biu-paging paging-large">
+			 	<ul>
+				     <li class="prev-up"><a href="#"><</a></li>
+				     <li class="active"><a href="#">1</a></li>
+				     <li><a href="#">2</a></li>
+				     <li><a href="#">3</a></li>
+				     <li><a href="#">4</a></li>
+				     <li><a href="#">5</a></li>
+				     <li><a href="#">6</a></li>
+				     <li><a href="#">……</a></li>
+				     <li><a href="#">100</a></li>
+				     <li class="next-down"><a href="#">></a></li>
+				     <p>
+						<span>到</span>
+						<span><input type="text" class="int-verysmall radius"></span>
+						<span>页</span>
+					</p>
+					<p class="taiz"><a href="#">跳转</a></p>
+			  	 </ul>
+			</div>
+  			</div>
+
+  		</div>	
+  	</div>
+  </div>	
+  </div>
+<div class="second-footer">译云专业语言服务平台 版权所有      Copyright ©2015 www.yeecloud.com All rights reserved. 京ICP备13002826号-7</div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+<script  type="text/javascript" src="../scripts/modular/icheck.js"></script>	
+<script>
+$(document).ready(function(){
+              $('.oder-form-lable input').iCheck({
+                checkboxClass: 'icheckbox_flat-blue',
+                radioClass: 'iradio_flat-blue'
+              });
+ });
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个人中心首页</title>
+    <link href="css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/modular.css" rel="stylesheet" type="text/css"/>
+	<link href="css/modular/frame.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+ <div class="wrapper-big"><!--包含除底部外的所有层-->
+	 	
+	<nav class="wap-second-nav">
+		<ul>
+			<a href="javascript:"><i class="icon iconfont left">&#xe626;</i></a>
+			<li>我的译云</li>
+			<a href="javascript:" id="nav-list"><i class="icon iconfont right">&#xe629;</i></a>
+		</ul>
+		<div class="pop-nav">
+			<ul>
+				<li>
+					<a href="#">译云首页</a>|
+					<a href="#">个人中心</a>|
+					<a href="#">我的订单</a>|
+					<a href="#">安全退出</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--个人中心-->
+	<section class="personal-banner">
+		<ul>
+			<li class="img"><img src="images/4.jpg" /></li>
+			<li>用户名是12345</li>
+			<li>普通会员</li>
+		</ul>
+	</section>
+	<section class="personal-tab">
+		<ul>
+			<a href="#">
+			<li>
+				<p>0</p>
+				<p>待付款</p>
+			</li>
+			</a>
+			<a href="#">
+			<li class="none-border">
+				<p>5</p>
+				<p>待确认</p>
+			</li>
+			</a>
+		</ul>
+	</section>
+	<section class="personal-list">
+		<ul>
+			<a href="#">
+			<li>
+				<p><img src="images/icon-9.jpg" /></p>
+				<p>我的订单</p>
+			</li>
+			</a>
+			<a href="#">
+			<li>
+				<p><img src="images/icon-10.jpg" /></p>
+				<p>我的账户</p>
+			</li>
+			</a>
+			<a href="#">
+			<li>
+				<p><img src="images/icon-11.jpg" /></p>
+				<p>安全设置</p>
+			</li>
+			</a>
+			
+			<a href="#">
+			<li>
+				<p><img src="images/icon-12.jpg" /></p>
+				<p>我的积分</p>
+			</li>
+			</a>
+		</ul>
+	</section>
+	
+	</div>
+	<section class="personal-ban1">
+		<section class="slider">
+			<section class="slider-img" id="slider">
+				<ol>
+					<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad1" /></a></li>
+					<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad2" /></a></li>
+					<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad3" /></a></li>
+					<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad4" /></a></li>
+					<li><a href="http://www.baidu.com"><img src="images/banner-2.png" alt="ad5" /></a></li>
+				</ol>
+			</section>
+			<ul class="slider-num" id="slideNum"></ul>
+		</section>
+	</section>
+</body>
+</html>
+<script type="text/javascript" src="scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="scripts/modular/global.js"></script>
+<script type="text/javascript" src="scripts/modular/frame.js"></script>
+<script type="text/javascript" src="scripts/modular/jquery.slider.js"></script>
+<script type="text/javascript">
+$(function(){
+	/*广告效果*/
+	$('#slider').slider({
+		speed:400,
+		timeout:4000,
+		auto:true,
+		pager:'#slideNum'
+	});
+});
+</script>

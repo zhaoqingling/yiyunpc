@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个人信息-译员认证后</title>
+ 	<link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+	<link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/icheck.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<style>
+  
+</style>
+<body>
+<!--弹出-->
+<!--   <div class="eject-big" >
+    <div class="prompt-big add-language-dialog" id="tran" add-language-dialog>
+    <div class="prompt-big-title">添加语言</div>
+      <div class="prompt-center">
+        <div class="form">
+          <ul>
+            <li class="item">
+              <p class="key">翻译语言:</p>
+              <div class="select-wrap">
+                <div class="select radius drop-down" drop-down>中文 —> 英文</i></div>
+                <div class="select-con undis">
+                  <ul>
+                      <li><a href="javascript:;">中文 —> 英文1</a></li>
+                      <li><a href="javascript:;">中文 —> 英文2</a></li>
+                      <li><a href="javascript:;">中文 —> 英文3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <p class="key">翻译类型:</p>
+              <div class="select-wrap">
+                <div class="select radius drop-down" drop-down>笔译</i></div>
+                <div class="select-con undis">
+                  <ul>
+                      <li><a href="javascript:;">笔译1</a></li>
+                      <li><a href="javascript:;">笔译2</a></li>
+                      <li><a href="javascript:;">笔译3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+              <p class="key">参考价格:</p>
+              <input type="text" class="int-text int-xlarge radius"/>
+              <span class="unit">元/千字</span>
+            </li>
+          </ul>
+        </div>
+        <div class="prompt-samll-confirm prompt-mt confirm-modal">
+          <ul>
+            <li class="eject-btn">
+              <input type="button" id="tran-determine" class="btn btn-green btn-100 radius20" value="确定">
+              <input type="button" id="tran-close" class="btn border-green btn-100 radius20 ml-50" value="取消">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mask" id="eject-mask"></div>
+  </div> -->
+<div class="eject-big">
+    <div class="prompt-samll" id="delete-language">
+    <div class="prompt-samll-title">删除</div>
+    <!--确认删除-->
+    <div class="prompt-samll-confirm">
+      <ul class="pass-list">
+      <li>
+        确定要删除该认证语言吗？
+      </li>
+      <li class="eject-btn">
+        <input type="button" id="delete-language-confirm" class="btn btn-green btn-120 radius20" value="确 定">
+        <input type="button" id="delete-language-cancel" class="btn border-green btn-120 radius20" value="取 消">
+      </li>   
+      </ul>
+    </div>
+    </div>  
+  <div class="mask" id="delete-language-mask"></div>
+</div>
+  <!--/弹出结束-->
+	<!--头部-->
+	<div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li class="current"><a href="#">我是客户</a></li>
+  				<li><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="#">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">爱大脸大脸爱大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><i class="icon-user"></i><a href="#">个人信息</a></li>
+		  				<li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+		  				<li><i class="icon-off"></i><a href="#">退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  <!--内侧内容区域-->
+  <div class="cloud-wrapper">
+  	<!--左侧菜单-->
+  	<div class="left-subnav">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip1"></p>
+  				</li>
+  			</ul>
+  		</div>
+  		<div class="left-list">
+  			<ul>
+  				<li>
+  					<a href="我的订单-下过订单.html">
+  					<span><i class="icon iconfont">&#xe645;</i></span>
+  					<span>我的首页</span>
+  					</a>
+  				</li>
+  				<li class="current">
+  					<a href="我的订单.html">
+  					<span><i class="icon iconfont">&#xe64a;</i></span>
+  					<span>我的订单</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的账户.html">
+  					<span><i class="icon iconfont">&#xe648;</i></span>
+  					<span>我的账户</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="优惠卷.html">
+  					<span><i class="icon iconfont">&#xe644;</i></span>
+  					<span>优惠券</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的级别.html">
+  					<span><i class="icon iconfont">&#xe647;</i></span>
+  					<span>我的级别</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的积分.html">
+  					<span><i class="icon iconfont">&#xe605;</i></span>
+  					<span>我的积分</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="发票管理.html">
+  					<span><i class="icon iconfont">&#xe643;</i></span>
+  					<span>发票管理</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="企业中心.html">
+  					<span><i class="icon iconfont">&#xe6f8;</i></span>
+  					<span>企业中心</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="个人信息.html">
+  					<span><i class="icon iconfont">&#xe642;</i></span>
+  					<span>个人信息</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="安全设置.html">
+  					<span><i class="icon iconfont">&#xe63f;</i></span>
+  					<span>安全设置</span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+  	<div class="right-wrapper">
+  		<!--右侧第一块-->
+
+  		<!--右侧第二块-->
+  		<div class="right-list mt-0 personal-translator-confirm">
+  			<div class="right-list-title pb-10 pl-20">
+  				<p>基本信息</p>
+  				<p class="right"><input type="button" class="btn  btn-od-large btn-red radius20" value="译员审核中"></p>
+  			</div>
+
+  			<div class="form-lable">
+  				<ul>
+  					<li class="toux">
+  						<p class="word">头像:</p>
+  						<p class="portrait" portrait>
+                <img src="../images/icon1.jpg" />
+                <span class="header-mask undis">修改头像</span>
+              </p>
+  					</li>
+  					<li>
+  						<p class="word"><b>*</b>用户名:</p>
+  						<p><input type="text" class="int-text int-xlarge radius" placeholder="熊二爷"/></p>
+  						<label>仅允许修改一次</label>
+  					</li>
+  					<li>
+  						<p class="word">姓名:</p>
+  						<p><input type="text" class="int-text int-xlarge radius"/></p>
+  					</li>
+  					<li>
+  						<p class="word"><b>*</b>昵称:</p>
+  						<p><input type="text" class="int-text int-xlarge radius"/></p>
+  					</li>
+  					<li>
+  						<p class="word">性别:</p>
+  						<p>
+  							<span><input type="radio" class="radio" id="square-radio-1" name="square-radio"/></span>
+  							<span>男</span>
+  						</p>
+  						<p>
+  							<span><input type="radio" class="radio" id="square-radio-2" name="square-radio"/></span>
+  							<span>女</span>
+  						</p>
+  					</li>
+  					<li>
+  						<p class="word">生日:</p>
+  						<p><input type="text" class="int-text int-xlarge radius"/><i class="icon-calendar"></i></p>
+  					</li>
+  					<li>
+  						<p class="word"><b>*</b>邮箱:</p>
+  						<p  class="rightword">ceshi@gtcom.com.cn</p>
+  						<p><a href="#">修改</a></p>
+  					</li>
+  					<li>
+  						<p class="word"><b>*</b>手机:</p>
+  						<p  class="rightword">需到安全中心进行绑111定</p>
+  						<p><a href="#">设置</a></p>
+  					</li>
+  					<li>
+  						<p class="word">身份证:</p>
+  						<p><input type="text" class="int-text int-xlarge radius"/></p>
+  					</li>
+  					<li>
+  						<p class="word"><b>*</b>母语:</p>
+  						<p><select class="select select-xlarge"></select></p>
+  					</li>
+  					<li>
+  						<p class="word"><b>*</b>翻译年限:</p>
+  						<p><input type="text" class="int-text int-xlarge radius"/></p>
+  					</li>
+  					<li class="info-confirmed">
+  						<p class="word"><b>*</b>认证语言:</p>
+						<div class="value">
+							<div add-program class='inputContainer'>
+							  <p class='inputp1'>
+								<span class="txt1 inputLang">中文→英语</span>
+								<span class="txt2 inputType" >笔译</span>
+								<span class="txt1 inputPrice"><strong>200</strong>元/千字（参考价）</span>
+								<span>未测试</span>
+								<input type="button" class="btn biu-btn btn-auto-25 btn-red radius10" name='1' value="删 除" delete-language>
+								<input type="button" class="btn biu-btn btn-auto-25 btn-green radius10" name='1.1' value="编 辑" editBtnLang >
+								<input type="button" class="btn biu-btn btn-auto-25 btn-blue radius10" name='1' value="测 试">
+							  </p>
+							  <p class='inputp2'>
+								<span class="txt1 inputLang">中文→西班牙语</span>
+								<span class="txt2 inputType">笔译</span>
+								<span class="txt1 inputPrice"><strong>200</strong>元/千字（参考价）</span>
+								<span>未测试</span>
+								<input type="button" class="btn biu-btn btn-auto-25 btn-red radius10" name='2' value="删 除" delete-language >
+								<input type="button" class="btn biu-btn btn-auto-25 btn-green radius10 editBtnLang" name='1.2' value="编 辑" editBtnLang>
+								<input type="button" class="btn biu-btn btn-auto-25 btn-blue radius10" name='1' value="测 试">
+							  </p>
+							  <p class='inputexit'>
+							  </p>
+							</div>
+							<span class="add-language" add-languages>添加语言</span>
+						</div>
+  					</li>
+  					<li>
+              <span class="error-message">错误信息提示</span>
+  						<p class="word skill-area"><b>*</b>擅长领域:</p>
+  						<div class="select-area">
+                <p>
+                  <span><input type="checkbox" class="radio" checked=""/></span>
+                  <span>生物化学</span>
+                </p>
+                <p>
+                  <span><input type="checkbox" class="radio"/></span>
+                  <span>会议翻译</span>
+                </p>
+                <p>
+                  <span><input type="checkbox" class="radio" checked=""/></span>
+                  <span>通用</span>
+                </p>
+                <p>
+                  <span><input type="checkbox" class="radio"/></span>
+                  <span>生物化学</span>
+                </p>
+                <p>
+                  <span><input type="checkbox" class="radio"/></span>
+                  <span>通用</span>
+                </p>
+                <p>
+                  <span><input type="checkbox" class="radio"/></span>
+                  <span>回忆翻译</span>
+                </p>
+                <p>
+                  <span><input type="checkbox" class="radio"/></span>
+                  <span>通用</span>
+                </p>   
+              </div>
+  					</li>
+  					<li>
+              <span class="error-message">错误信息提示</span>
+  						<p class="word skill-area"><b>*</b>擅长用途:</p>
+              <div class="select-area">
+    						<p>
+    							<span><input type="checkbox" class="radio" checked=""/></span>
+    							<span>生物化学</span>
+    						</p>
+    						<p>
+    							<span><input type="checkbox" class="radio"/></span>
+    							<span>会议翻译</span>
+    						</p>
+    						<p>
+    							<span><input type="checkbox" class="radio" checked=""/></span>
+    							<span>通用</span>
+    						</p>
+    						<p>
+    							<span><input type="checkbox" class="radio"/></span>
+    							<span>生物化学</span>
+    						</p>
+    						<p>
+    							<span><input type="checkbox" class="radio"/></span>
+    							<span>通用</span>
+    						</p>
+    						<p>
+    							<span><input type="checkbox" class="radio"/></span>
+    							<span>回忆翻译</span>
+    						</p>
+    						<p>
+    							<span><input type="checkbox" class="radio"/></span>
+    							<span>通用</span>
+    						</p>
+               </div> 
+  					</li>
+  					<li>
+  						<p class="word">座机:</p>
+  						<p><input type="text" class="int-text int-xlarge radius"/></p>
+  					</li>
+  					<li>
+  						<p class="word">QQ:</p>
+  						<p><input type="text" class="int-text int-xlarge radius"/></p>
+  					</li>
+  					<li>
+  						<p class="word">地址:</p>
+  						<p><select class="select select-in-small"><option>国家</option></select></p>
+  						<p><select class="select select-in-small"></select></p>
+  						<p>省</p>
+  						<p><select class="select select-in-small"></select></p>
+  						<p>市</p>
+  						<p><input type="text" class="int-text int-in-bi radius"/></p>
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="recharge-btn order-btn">
+ 				<input type="button" id="recharge-popo" class="btn btn-green btn-xxxlarge radius10" value="保 存">
+ 			</div>
+
+  		</div>
+  	</div>
+
+
+  </div>
+
+  </div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+<script type="text/javascript" src="../scripts/modular/eject.js"></script>
+<script  type="text/javascript" src="../scripts/modular/icheck.js"></script>
+<script type="text/javascript" src="../scripts/modular/info_confirmed.js"></script>
+
+<script>
+ $(document).ready(function(){
+              $('.form-lable input').iCheck({
+                checkboxClass: 'icheckbox_flat-blue',
+                radioClass: 'iradio_flat-blue'
+              });
+
+              //头像鼠标移入事件
+              $(document).on('mouseover', '[portrait]', function(){
+                  $(this).find('.header-mask').removeClass('undis');
+              });
+              //头像鼠标移出事件
+               $(document).on('mouseout', '[portrait]', function(){
+                  $(this).children('.header-mask').addClass('undis');
+              });
+ });
+</script>
+</body>
+</html>

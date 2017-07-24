@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>企业账户</title>
+	<link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!--头部-->
+    <div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li class="current"><a href="#">我是客户</a></li>
+  				<li><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="#">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">大脸盼爱大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><i class="icon-user"></i><a href="#">个人信息</a></li>
+		  				<li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+		  				<li><i class="icon-off"></i><a href="#">退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  	<!--内侧内容区域-->
+  	<div class="cloud-wrapper">
+  		<!--左侧菜单-->
+  		<div class="left-subnav-business">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip2"></p>
+  				</li>
+  			</ul>
+  		</div>
+
+  		<div class="left-list">
+  			<ul>
+  				<li>
+  					<a href="我的订单-下过订单.html">
+  					<span><i class="icon iconfont">&#xe645;</i></span>
+  					<span>我的首页</span>
+  					</a>
+  				</li>
+  				<li >
+  					<a href="我的订单.html">
+  					<span><i class="icon iconfont">&#xe64a;</i></span>
+  					<span>我的订单</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的账户.html">
+  					<span><i class="icon iconfont">&#xe648;</i></span>
+  					<span>我的账户</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="优惠卷.html">
+  					<span><i class="icon iconfont">&#xe644;</i></span>
+  					<span>优惠券</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的级别.html">
+  					<span><i class="icon iconfont">&#xe647;</i></span>
+  					<span>我的级别</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="我的积分.html">
+  					<span><i class="icon iconfont">&#xe605;</i></span>
+  					<span>我的积分</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="发票管理.html">
+  					<span><i class="icon iconfont">&#xe643;</i></span>
+  					<span>发票管理</span>
+  					</a>
+  				</li>
+  				<li class="business-side-bar">
+  					<a href="企业中心.html">
+  					<span><i class="icon iconfont">&#xe6f8;</i></span>
+  					<span>企业中心</span>
+  					</a>
+  					<ul class="link_business">
+  						<li><a href="#">企业信息</a></li>
+  						<li><a href="#">人员管理</a></li>
+  						<li><a href="#">企业账单</a></li>
+  						<li class="current1"><a href="#">企业账户</a></li>
+  					</ul>
+  				</li>
+  				<li>
+  					<a href="个人信息.html">
+  					<span><i class="icon iconfont">&#xe642;</i></span>
+  					<span>个人信息</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="安全设置.html">
+  					<span><i class="icon iconfont">&#xe63f;</i></span>
+  					<span>安全设置</span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+  	<div class="right-wrapper">
+  		<!--右侧第一块-->
+  		<div class="right-title">
+  			<div class="right-title-left user-account-title">
+  				<div class="right-title-left-word user-account-title-word">
+	  				<ul>
+	  					<li class="user-word">账户余额</li>	
+	  				</ul>
+	  				<ul>
+	  					<li class="word"><span>19835209.00</span>CNY</li>
+	  					<li class="c-bj-bule"><a href="#">充值余额</a></li>
+	  				</ul>
+	  				<ul class="word-li">
+	  					<li>为保证账户安全，如需提现，请致电译云客服进行申请和审核：<span>400-119-8080</span></li>	
+	  				</ul>
+  				</div>
+  			</div>
+  			<div class="user-title-right"><img src="../images/user-bj.jpg" /></div>
+  		</div>	
+  		<!--右侧第二块-->
+  		<div class="right-list-business">
+  			<div class="query-order">
+  				<ul>
+  					<li class="left">
+  						<p><a href="#">今天</a></p>
+  						<p class="current"><a href="#">近一个月</a></p>
+  						<p><a href="#">近三个月</a></p>
+  						<p><a href="#">近一年</a></p>
+  					</li>
+  					<li class="right">
+  						<span class="total-balance">收入:1244.28CNY</span>
+  						<span class="total-balance">支出:122.33USD</span>
+  						<p><a href="#" class="is" id="screen-a">高级筛选</a><a href="#" class="is" id="screen-b" style="display:none;">收起筛选</a><i class="icon-angle-down"></i></p>
+  						<!--<p id="screen-b"><a href="#" class="is">高级筛选<i class="icon-angle-down"></i></a></p>-->
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="query-order order-hiddn">
+  				<ul>
+  					<li class="left li-xlarge li-xlarge-ml">
+  						<p><a href="#">订单时间</a></p>
+  						<p><input type="text" class="int-text int-mini radius"></p>
+  						<p>—</p>
+  						<p><input type="text" class="int-text int-mini radius"></p>
+  					</li>
+  					<li class="left li-xlarge">
+  						<p>收支:</p>
+  						<p class="current"><a href="#">全部</a></p>
+  						<p><a href="#">收入</a></p>
+  						<p><a href="#">支出</a></p>
+  					</li>
+  					<li class="left li-xlarge">
+  						<p>类型:</p>
+  						<p class="current"><a href="#">全部</a></p>
+  						<p><a href="#">充值</a></p>
+  						<p><a href="#">提现</a></p>
+  						<p><a href="#">下单</a></p>
+  						<p><a href="#">退款</a></p>
+  					</li>
+  					
+  				</ul>
+  			</div>
+
+		<div class="right-list-table">
+			 <table class="table table-bg  table-striped-even table-height50">
+                    <thead>
+                       <tr>
+                            <th>时间</th>
+                            <th>收入</th>
+                            <th>支出</th>
+                            <th>余额</th>
+                            <th>类型</th>
+                            <th>对方</th>
+                            <th>详细说明</th>
+                      </tr>
+               		</thead>
+                    <tbody>
+						<tr>
+                            <td>1987-11-04 08:18:08</td>
+                            <td class="red">+$23.00</td>
+                            <td class="green">-$1000.00</td>
+                            <td>$1000.00</td>
+                            <td>充值</td>
+                            <td>支付宝</td>
+                            <td>成功充值</td>
+						 </tr>
+						 <tr>
+                            <td>2014-02-28 14:18:23</td>
+                            <td class="red">+¥260.43</td>
+                            <td class="green">-¥260.43</td>
+                            <td>¥260.43</td>
+                            <td>提现</td>
+                            <td>光大银行</td>
+                            <td>成功提现</td>
+						 </tr>
+						 <tr>
+                            <td>2016-12-23 10:23:11</td>
+                            <td class="red">+$1000.00</td>
+                            <td class="green">-$1000.00</td>
+                            <td>$1000.00</td>
+                            <td>下单</td>
+                            <td>中译语通科技（北......</td>
+                            <td>翻译下单</td>
+						 </tr>
+						 <tr>
+                            <td>1987-11-04 08:18:08</td>
+                            <td class="red">+$23.00</td>
+                            <td class="green">-$1000.00</td>
+                            <td>$1000.00</td>
+                            <td>退款</td>
+                            <td>支付宝</td>
+                            <td>翻译订单退款</td>
+						 </tr>
+						 <tr>
+                            <td>2013-01-12 04:12:44</td>
+                            <td class="red">+$260.43</td>
+                            <td class="green">-$260.43</td>
+                            <td>$260.43</td>
+                            <td>充值</td>
+                            <td>支付宝</td>
+                            <td>成功充值</td>
+						 </tr>
+						 
+
+				    </tbody>
+            	</table>
+            		
+		</div>
+  			
+  		</div>	
+  	</div>
+  	</div>
+  </div>
+
+    <script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/modular/frame.js"></script>
+    <script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+    <script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+</body>
+</html>

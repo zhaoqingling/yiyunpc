@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>译员级别</title>
+ 	<link href="../css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/modular/global.css" rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/frame.css"  rel="stylesheet" type="text/css"/>
+	<link href="../css/modular/headr-footer.css"  rel="stylesheet" type="text/css"/>
+    <link href="../css/modular/modular.css"  rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+	<!--头部-->
+	<div class="header-big">
+  	<div class="cloud-header">
+  		<div class="logo"><a href="#"><img src="../images/logo.png" /></a></div>
+  		<!--导航-->
+  		<div class="cloud-nav">
+  			<ul>
+  				<li><a href="#">我是客户</a></li>
+  				<li class="current"><a href="#">我是服务方</a></li>
+  			</ul>
+  		</div>
+  		<!--导航-->
+  		<div class="cloud-breadcrumb">
+  			<ul>
+  				<li class="switch" id="switch" >
+  					<a href="#">简体中文<i class="icon-caret-down dingw" ></i></a>
+		  				<div class="switch-hover" style="display:none;">
+				  			<ul>
+				  				<li><a href="#">简体中文</a></li>
+				  				<li class="border-none"><a href="#">English</a></li>
+				  			</ul>
+		  		  		</div>
+  				</li>
+  				<li class="nav-icon"><a href="#"><i class="icon iconfont">&#xe60b;</i></a></li>
+  				<li class="nav-icon mt-2"><a href="#"><i class="icon iconfont">&#xe60a;</i><span class="message">3</span></a></li>
+  				<li class="user" id="user"><a href="#" class="yonh">大脸大脸<i class="icon-caret-down btg" id="icon2"></i></a>
+  				<div class="show-hover" style="display:none;">
+		  			<ul>
+		  				<li><i class="icon-user"></i><a href="#">个人信息</a></li>
+		  				<li><i class="icon-lock"></i><a href="#">安全设置</a></li>
+		  				<li class="border-none"><i class="icon-off"></i><a href="#">退出</a></li>
+		  			</ul>
+  		  		</div>
+  				</li>
+  			</ul>
+  		</div>
+  	</div>
+  </div>
+  <!--二级主体-->
+  <!--外侧背景-->
+  <div class="cloud-container">
+  <!--内侧内容区域-->
+  <div class="cloud-wrapper">
+  	<!--左侧菜单-->
+  	<div class="left-subnav">
+  		<div class="left-title">
+  			<ul>
+  				<li class="user"><img src="../images/icon.jpg" /></li>
+  				<li class="word">
+  					<p>大脸盼爱大脸</p>
+  					<p class="vip1"></p>
+  				</li>
+  			</ul>
+  		</div>
+  		<div class="left-list">
+  			<ul>
+  				<li>
+  					<a href="我的订单-下过订单.html">
+  					<span><i class="icon iconfont">&#xe645;</i></span>
+  					<span>我的首页</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe64a;</i></span>
+  					<span>发现订单</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe648;</i></span>
+  					<span>我的订单</span>
+  					</a>
+  				</li>
+  				<li  class="current">
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe644;</i></span>
+  					<span>译员级别</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe647;</i></span>
+  					<span>工作记录</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe605;</i></span>
+  					<span>LSP管理</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe643;</i></span>
+  					<span>个人信息</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe6f8;</i></span>
+  					<span>联系方式</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="#">
+  					<span><i class="icon iconfont">&#xe642;</i></span>
+  					<span>翻译收藏</span>
+  					</a>
+  				</li>
+  				<li>
+  					<a href="安全设置.html">
+  					<span><i class="icon iconfont">&#xe63f;</i></span>
+  					<span>安全设置</span>
+  					</a>
+  				</li>
+  			</ul>
+  		</div>
+  		<!--定位-->
+  		<div class="locationaaa">
+  		<div class="left-phone">
+  			<p><i class="icon iconfont">&#xe60d;</i></p>
+  			<p class="phone-word">
+  				<span>早9:00-晚7:00</span>
+  				<span class="red">400-119-8080</span>
+  			</p>
+  		</div>
+  		<div class="left-tplist"><a hrel="#"><img src="../images/to.jpg" /></a><i class="icon-remove-circle"></i></div>
+  		</div>
+  	</div>
+  	<!--右侧内容-->
+  	<!--右侧大块-->
+  	<div class="right-wrapper">
+  		<!--右侧第一块-->
+		<div class="level-bj mt-0 h230">
+	  		<div class="levelstep-title">
+	  			<p>译员级别：</p>
+	  			<p class="v-2"><!--按照vip等级改class v-1 v-2 v-3 v-4 -->
+	  				<span class="word">二级译员</span>
+	  			</p>
+	  		</div>	
+	  		<div class="levelstep-step">
+	  			<ul>
+	  				<li class='myv'>
+	  					<p class="v1-wordcolor">
+	  						<span>0</span>
+	  						<span class="v1-radius"></span>
+	  						<span>一级译员</span>
+	  					</p>
+	  					<div class="ash-border"><!--vip1 边框颜色--><p class="v1-border" style="width:100%;"></p></div>
+	  				</li>
+	  				<li class='myv'> 
+	  					<p class="v2-wordcolor">
+	  						<span>>0</span>
+	  						<span class="v2-radius"></span>
+	  						<span>二级译员</span>
+	  					</p>
+	  					<div class="ash-border"><!--vip2 边框颜色--><p class="v2-border" style="width:80%;"></p></div>
+	  				</li>
+	  				<li class='myv-end'>
+	  					<p class="v3-wordcolor">
+	  						<span>1000</span>
+	  						<span class="v3-radius"></span>
+	  						<span>三级译员</span>
+	  					</p>
+	  					
+	  				</li>
+	  			<!-- 	<li class="v4-width">
+	  					<p class="v4-wordcolor">
+	  						<span>30000</span>
+	  						<span class="v4-radius"></span>
+	  						<span>SVIP白金会员</span>
+	  					</p>
+	  				</li> -->
+	  			</ul>
+	  		</div>
+	  		<div class="levelstep-step-infor">您目前的成长值为879 ，再获得121成长值即可升级到三级议员。贡献值记录。<a href="#">贡献值记录</a></div>
+	  	</div>	
+  		<!--右侧第二块-->
+  		<div class="level-bj mt-20">
+  			<div class="level-title">
+  				<p>普通会员权利及优惠</p>	
+  			</div>
+  			<div class="level-list">
+  				<ul>
+  					<li>
+  						<p class="img1"></p>
+  						<p>升级礼包</p>
+  					</li>
+  					<li>
+  						<p class="img2"></p>
+  						<p>生日礼包</p>
+  					</li>
+  					<li>
+  						<p class="img3"></p>
+  						<p>免费修改</p>
+  					</li>
+  					<li>
+  						<p class="img4"></p>
+  						<p>邮寄优惠</p>
+  					</li>
+  					<li>
+  						<p class="img5"></p>
+  						<p>会员优惠</p>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>	
+  		<div class="level-bj mt-20">
+  			<div class="change-list">
+  				<ul>
+  					<li class="title">译员级别变动记录：</li>
+  					<li>
+  						<p>2015-04-07</p>
+  						<p>升级为 一级译员</p>
+  					</li>
+  					<li>
+  						<p>2015-04-07</p>
+  						<p>升级为 二级译员</p>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="level-bj mt-20">
+  			<div class="change-list">
+  				<ul>
+  					<li class="title">译员级别图示：</li>
+  				</ul>
+  			</div>
+  			<div class="yiyuan-level">
+  				<ul>
+  					<li>
+  						<p class="img1"></p>
+  						<p class="v-1">一级译员</p>
+  						<p>语言对测试通过</p>
+  					</li>
+  					<li>
+  						<p class="img2"></p>
+  						<p class="v-2">二级译员</p>
+  						<p>贡献值大于0</p>
+  					</li>
+  					<li>
+  						<p class="img3"></p>
+  						<p class="v-3">三级译员</p>
+  						<p>贡献值大于1000</p>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="level-bj mt-20">
+  			<div class="change-list">
+  				<ul>
+  					<li class="title">我的贡献值<a href="#">什么是贡献值</a></li>
+  					<li></li>
+  				</ul>
+  			</div>
+  			<div class="right-list-table pl-20 pr-20 mb-40">
+				 <table class="table table-bg  table-striped-even table-height50">
+	                    <thead>
+	                       <tr>
+	                            <th width="20%">时间</th>
+	                            <th width="20%">贡献值</th>
+	                            <th width="20%">贡献值来源</th>
+	                            <th width="40%">详细说明</th>
+	                      </tr>
+	               		</thead>
+	                    <tbody>
+							<tr>
+	                            <td><div class="fy-sm">1987-11-04 08:18:08</div></td>
+	                            <td class="red">+50</td>
+	                            <td>认证</td>
+	                            <td>登录账户，登录时间：2015-09-07 11:23:06</td>
+							</tr>
+							<tr>
+	                            <td><div class="fy-sm">1987-11-04 08:18:08</div></td>
+	                            <td class="red">+345</td>
+	                            <td>翻译</td>
+	                            <td>订单号：434343433</td>
+							</tr>
+							<tr>
+	                            <td><div class="fy-sm">1987-11-04 08:18:08</div></td>
+	                            <td class="red">+545</td>
+	                            <td>评价</td>
+	                            <td>评价订单，订单号：434343433</td>
+							</tr>
+							<tr>
+	                            <td><div class="fy-sm">1987-11-04 08:18:08</div></td>
+	                            <td class="red">+50</td>
+	                            <td>评价</td>
+	                            <td>评价订单，订单号：434343433</td>
+							</tr>
+					    </tbody>
+	            </table>   		
+			</div>
+			<div class="biu-paging paging-large">
+			 	<ul>
+				     <li class="prev-up"><a href="#">&lt;</a></li>
+				     <li class="active"><a href="#">1</a></li>
+				     <li><a href="#">2</a></li>
+				     <li><a href="#">3</a></li>
+				     <li><a href="#">4</a></li>
+				     <li><a href="#">5</a></li>
+				     <li><a href="#">6</a></li>
+				     <li><a href="#">……</a></li>
+				     <li><a href="#">100</a></li>
+				     <li class="next-down"><a href="#">&gt;</a></li>
+				     <p>
+						<span>到</span>
+						<span><input type="text" class="int-verysmall radius"></span>
+						<span>页</span>
+					</p>
+					<p class="taiz"><a href="#">跳转</a></p>
+			  	 </ul>
+			</div>
+  		</div>
+  		
+  	</div>
+  	
+  	
+  </div>
+  		
+  </div>
+<script type="text/javascript" src="../scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../scripts/modular/frame.js"></script>
+<script type="text/javascript" src="../scripts/modular/eject.js"></script>
+<script type="text/javascript" src="../scripts/modular/jqueryrotate.2.3.js"></script>
+<script type="text/javascript" src="../scripts/modular/alignment.js"></script>
+</body>
+</html>

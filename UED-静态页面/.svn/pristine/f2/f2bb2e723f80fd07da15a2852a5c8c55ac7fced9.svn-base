@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <link href="css/bootstrap/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/modular/global.css" rel="stylesheet" type="text/css"/>
+    <link href="css/modular/headr-footer.css" rel="stylesheet" type="text/css"/>
+    <link href="css/modular/index.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="homebody">
+
+	<!--面包屑导航-->
+		<div class="placeorder-breadcrumb-big">
+			<div class="placeorder-breadcrumb">
+				<ul>
+					<li class="left"><i class="icon-volume-off mar-notice"></i><a href="#">网站公告栏，通知网站各种事件网站公告栏，通知网站各种事件</a></li>
+					<li class="right">
+						<p><a href="#">登陆</a><a href="#" class="blue">免费注册</a></p>
+						<p><a href="#">我的订单</a></p>
+						<p><a href="#">我是客户</a></p>
+						<p><a href="#">我是服务商</a></p>
+						<p><a href="#"  class="none-border"><i class="icon iconfont">&#xe60b;</i>手机版</a></p>
+						<p class="in-switch" id="in-switch">
+							<a href="#">简体中文<i class="icon-caret-down"></i></a>
+						</p>
+						<div class="in-switch-hover" style="display: none;">
+					  			<ul>
+					  				<li><a href="#">简体中文</a></li>
+					  				<li class="border-none"><a href="#">English</a></li>
+					  			</ul>
+			  		  	</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--banner-->
+		<div class="banner"><p><img src="images/banner-word.png"></p></div>
+
+		<!--index nav-->
+			<div class="index-nav">
+				<ul>
+					<li><img src="images/index-logo.png" /></li>
+					<li class="right">
+						<p><a href="#" class="current">首页</a></p>
+						<p><a href="#">笔译</a></p>
+						<p><a href="#">口译</a></p>
+						<p><a href="#">服务</a></p>
+						<p><a href="#">APP</a></p>
+					</li>
+				</ul>
+			</div>
+		<!--index nav-->
+		<!--bigmo-->
+		<div class="index-wrapper">
+			<!--翻译区-->
+			<div class="translate">
+				<div class="translate-title">
+					<ul>
+						<li>
+							<select tabindex="5" class="dropdown" id="showa" data-settings='{"cutOff": 12}'>
+								<option value="" class="label">俄语</option>
+								<option value="zh">自动检测</option>
+								<option value="zh">中文简体</option>
+		                        <option value="en">英语</option>
+		                        <option value="fr">法语</option>
+		                        <option value="de">德语</option>
+							</select>
+						</li>
+						<li class="change"><a href="#"><i class="icon-exchange"></i></a></li>
+						<li>
+							<select tabindex="5" class="dropdown" id="showb" data-settings='{"cutOff": 12}'>
+								<option value="中文简体"  class="label">中文简体</option>
+		                        <option value="en">英语</option>
+		                        <option value="fr">法语</option>
+		                        <option value="de">德语</option>
+		                        <option value="pt">葡萄牙语</option>
+							</select>
+						</li>
+						<li><input type="button"  class="btn btn-blue trans-btn-zh radius2" value="翻译"></li>
+					</ul>
+				</div>
+				<!--翻译主体-->
+				<div class="translate-wapper">
+					<div class="before-translation">
+						<textarea  class="int-before" id="int-before"></textarea>
+						<div class="already">已输入<span>245</span>字，最多可输入2000字</div>
+					</div>
+					<div class="before-translation ml-20 before-translation-r">
+						<textarea  class="int-post" ></textarea>
+						<label>抱歉，该翻译失败，请选择</label>
+						<div class="post-cion">
+							<p>
+								<a href="#" class="ord-icon" id="sus-top1"><i class="icon iconfont">&#xe639;</i><span class="suspension1">复制译文</span></a>
+								<a href="#" class="radio-icon"  id="sus-top2"><i class="icon iconfont">&#xe636;</i><span class="suspension2">朗诵译文</span></a>
+								<a href="javascript:;" class="stars-icon"  id="sus-top3"><i class="icon iconfont">&#xe6aa;</i><span class="suspension3">收藏译文</span></a>
+							</p>
+							<p class="right" id="error">
+								<a href="#" class="edit-icon" id="sus-top">
+									<i class="icon iconfont">&#xe638;</i>
+									<span class="mt-2">翻译有误?</span>
+								</a>
+								<div class="suspension">	修改译文</div>
+							</p>
+							<p class="right" id="error-oc"  style="display: none;">
+								<a href="#" class="edit-icon" id="preser-btn">
+									<span><i class="icon iconfont">&#xe651;</i></span>
+									<span>保存</span>
+								</a>
+								<a href="#"  class="edit-icon"  id="preser-close">
+									<span><i class="icon iconfont">&#xe652;</i></span>
+									<span>取消</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			<!--file-->
+				<div class="translate-file">
+					<ul>
+						<li>
+							<p><input type="button" class="btn btn-blue btn-trans radius2" value="上传文档"><input type="file"  class="pop-file"></p>
+							<p>（支持5000字以内的.doc（X）.TXT文件）</p>
+						</li>
+						<li class="right"><input type="button" class="btn border-blue border-blue-b btn-trans-b radius2" value="人工翻译"></li>
+					</ul>
+				</div>
+			</div>
+			<!--说明-->
+			<div class="explain-big">
+			<div class="explain-wapper">
+				<div class="explain-cont">
+					<div class="item2">
+					   <div class="img"> </div>
+					        <div class="item2-txt">
+					        		<span class="word">翻译论文、稿件</span>
+					        		<span class="exp-icon1"></span>
+					        		<span><input type="button" class="btn border-blue place-btn-none radius20" value="立即下单"></span>
+					        </div>
+					      	<div class="caption caption1">
+								<p class="title">翻译论文、稿件</p>
+								<p class="text-l">提供各种论文、稿件的翻译、审校、排版等服务，不满意免费修改</p>
+								<p><input type="button" class="btn btn-blue place-btn radius20" value="立即下单"></p>
+					      	</div>
+					    </div>
+				   </div>
+				   <div class="explain-cont ml-20">
+					<div class="item2">
+					   <div class="img"></div>
+					        <div class="item2-txt">
+					        		<span class="word">翻译中英文简历</span>
+					        		<span class="exp-icon2"></span>
+					        		<span><input type="button" class="btn border-blue place-btn-none radius20" value="立即下单"></span>
+					        </div>
+					      	<div class="caption caption2">
+								<p class="title">翻译中英文简历</p>
+								<p class="text-l">按模板填写简历内容，简单、便捷、译审结合，不满意免费修改</p>
+								<p><input type="button" class="btn btn-blue place-btn radius20" value="立即下单"></p>
+					      	</div>
+					    </div>
+				   </div>
+				  <div class="explain-cont ml-20">
+					<div class="item2">
+					   <div class="img"></div>
+					        <div class="item2-txt">
+					        		<span class="word">翻译产品说明</span>
+					        		<span class="exp-icon3"></span>
+					        		<span><input type="button" class="btn border-blue place-btn-none radius20" value="立即下单"></span>
+					        </div>
+					      	<div class="caption caption3">
+								<p class="title">翻译产品说明</p>
+								<p class="text-l">提供最快速最精准的翻译服务，译员时刻待命，立等可取</p>
+								<p><input type="button" class="btn btn-blue place-btn radius20" value="立即下单"></p>
+					      	</div>
+					    </div>
+				   </div>
+				   <div class="explain-cont ml-20">
+					<div class="item2">
+					   <div class="img"></div>
+					        <div class="item2-txt">
+					        		<span class="word">翻译各种证件</span>
+					        		<span class="exp-icon4"></span>
+					        		<span><input type="button" class="btn border-blue place-btn-none radius20" value="立即下单"></span>
+					        </div>
+					      	<div class="caption caption4">
+								<p class="title">翻译各种证件</p>
+								<p class="text-l">提供身份证、护照、驾照等证件的翻译服务，可加盖公章</p>
+								<p><input type="button" class="btn btn-blue place-btn radius20" value="立即下单"></p>
+					      	</div>
+					    </div>
+				   </div>
+			</div>
+			</div>
+
+			 <!--广告-->
+		<div class="banner-wapper">
+				 <div class="banner-sm">
+				 	<p class="left">
+				 		<span class="word">口译翻译</span>
+				 		<span>全球多领域，全语种高端口译人才，提供国际会议，商务活动等各种服务</span>
+				 	</p>
+				 	<p class="right"><input type="button" class="btn btn-blue banner-place-btn radius20" value="立即下单"></p>
+				 </div>
+				 <div class="banner-hover">
+				 	<p><i class="icon-angle-down"></i></p>
+				 </div>
+		</div>
+		 <!--服务平台-->
+		 	<div class="service-wapper">
+		 		<div class="service-container">
+		 			<div class="service-title">一站式翻译服务平台</div>
+		 			<div class="hot_role">
+						<ul id="centerwell">
+							<li>
+								<h3>
+									<p><img src="images/icon-16.png" id="img1"><i class="icon-plus jiaicon1"></i></p>
+									<p class="word">智能自动翻译</p>
+								</h3>
+				                    <div class="hot_content">
+				                        <div class="hot_top">
+				                       		亿万级语料支持，通过强大的云端数据处理技术为用户提供精准、快速、人性的智能翻译服务。
+				                        </div>
+				                    </div>
+							</li>
+							<li>
+								<h3>
+									<p><img src="images/icon-17.png"  id="img2"><i class="icon-plus jiaicon2"></i></p>
+									<p class="word">精准人工翻译</p>
+								</h3>
+				                    <div class="hot_content">
+				                        <div class="hot_top">
+				                           一流的译员翻译团队，覆盖全球资源，高速响应客户需求，做精准的人工翻译，让客户随时享有翻译服务
+				                        </div>
+				                    </div>
+							</li>
+							<li style="margin-right:0">
+								<h3>
+									<p><img src="images/icon-18.png"  id="img3"><i class="icon-plus jiaicon3"></i></p>
+									<p class="word">全终端翻译工具</p>
+								</h3>
+				                    <div class="hot_content">
+				                            <div class="hot_top">
+				                               平台提供字幕翻译、会议翻译、网页插件等免费翻译工具，通过网页、app，微信等各种终端尽可享有
+				                     </div>
+				               	 </div>
+							</li>
+						</ul>
+					</div>
+		 		</div>
+		 	</div>
+
+		 <!--数据-->
+		<div class="data-wapper">
+			<div class="data-container">
+				<ul>
+					<li>
+						<p class="icon-a"></p>
+						<p class="shuz timer" id="count-number" data-to="26783912" data-speed="4500"></p>
+						<p class="word">语料</p>
+					</li>
+					<li>
+						<p class="icon-b"></p>
+						<p class="shuz timer" id="cus-number" data-to="543891" data-speed="4500"></p>
+						<p class="word">客户</p>
+					</li>
+					<li>
+						<p class="icon-c"></p>
+						<p class="shuz timer" id="yiyuan" data-to="78239" data-speed="4500"></p>
+						<p class="word">译员</p>
+					</li>
+					<li>
+						<p class="icon-d"></p>
+						<p class="shuz timer" id="order-number" data-to="673892" data-speed="4500"></p>
+						<p class="word">订单</p>
+					</li>
+					<li class="non-ml">
+						<p class="icon-e"></p>
+						<p class="shuz timer" id="language-number" data-to="60" data-speed="4500"></p>
+						<p class="word">语种</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<!--底部-->
+	<div class="footer-wapper">
+		<div class="footer-container">
+			<div class="footer-about">
+				<div class="footer-about-left">
+					<ul>
+						<li class="title">关于我们</li>
+						<li>
+							<p><a href="#">公司介绍</a></p>
+							<p><a href="#">合作客户</a></p>
+							<p><a href="#">意见反馈</a></p>
+							<p><a href="#">协议规则</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li class="title">我是客户</li>
+						<li>
+							<p><a href="#">下单指南</a></p>
+							<p><a href="#">常见问题</a></p>
+							<p><a href="#">服务说明</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li class="title">我是译者</li>
+						<li>
+							<p><a href="#">译者认证</a></p>
+							<p><a href="#">译者咨询</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li class="title">产品链接</li>
+						<li>
+							<p><a href="#">译库</a></p>
+							<p><a href="#">找翻译APP</a></p>
+							<p><a href="#">字幕通</a></p>
+							<p><a href="#">译库网页翻译</a></p>
+						</li>
+					</ul>
+					<ul>
+						<li class="title">友情链接</li>
+						<li>
+							<p><a href="#">中译语通</a></p>
+							<p><a href="#">译库</a></p>
+							<p><a href="#">译世界</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-about-right">
+					<ul>
+						<li>
+							<p class="phone"></p>
+							<p><img src="images/erwm.png" /></p>
+						</li>
+						<li class="shaw">
+							<p class="shaw-a"><a href="javascript:"></a></p>
+							<p class="shaw-b"><a href="javascript:"></a></p>
+							<p class="shaw-c"><a href="javascript:"></a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-list">
+				<ul>
+					<li class="di-icon">译云专业语言服务平台 版权所有<img src="images/di-icon.png" /></li>
+					<li>Copyright ©2015 www.yeecloud.com All rights reserved. 京ICP备13002826号-7<a href="#"><img src="images/tb.png"> 京公网安备 11010702001426号</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="advertisement" id="banner-img">
+	<div id="focus3" class="focus">
+		<span class="banner-close"></span>
+		<ul>
+			<li><a href="JavaScript:;"><img src="./images/ads.jpg"/></a></li>
+			<li><a href="JavaScript:;"><img src="./images/ads.jpg"/></a></li>
+			<li><a href="JavaScript:;"><img src="./images/ads.jpg"/></a></li>
+			<li><a href="JavaScript:;"><img src="./images/ads.jpg"/></a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="scripts/modular/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="scripts/modular/drop-down.js"></script>
+<script type="text/javascript" src="scripts/modular/index.js"></script>
+<script type="text/javascript" src="scripts/modular/digital-scroll.js"></script>
+<script type="text/javascript" src="scripts/modular/Tony_Tab.js"></script>
+<script>
+$(function(){
+	var width = $('#banner-img').width();
+	$('#banner-img img').width(width+'px');
+	$('#focus3').slideFocus();
+	$(document).on('click','.banner-close',function(){
+		$('#banner-img').css('display','none');
+	});
+	$('.preNext').remove();
+	$(document).on('click','#sus-top3 i',function(){
+		$(this).text('');
+		if(!$(this).hasClass('icon-shaidanpingjia-copy')){
+			$(this).addClass('icon-shaidanpingjia-copy').removeClass('icon-xingxing');
+		}else{
+			$(this).removeClass('icon-shaidanpingjia-copy').addClass('icon-xingxing');
+		}
+	});
+	act();
+});
+function act(){
+	var len = $('.homebody .placeorder-breadcrumb-big .left a' ).width();
+	var txt = $('.homebody .placeorder-breadcrumb-big .left a').text();
+	var htm = '<marquee class="mar-scroll" scrolldelay="200" loop="infinite"><a href="#">'+txt+'</a></marquee>';
+	if(len>500){
+		$('.homebody .placeorder-breadcrumb-big .left').find('a').remove();
+		$('.homebody .placeorder-breadcrumb-big .left').append(htm);
+	}
+}
+
+</script>
+</body>
+</html>
